@@ -1,0 +1,1710 @@
+2024-11-18 10:21:19.473 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-18 10:21:19.497 [main] INFO  c.e.x.j.productdemoaop.ProductDemoAOPApplication - Starting ProductDemoAOPApplication using Java 17.0.12 with PID 22376 (/Users/llmons/IdeaProjects/JavaEEPlatform/7.SpringAOP/productdemoaop/target/classes started by llmons in /Users/llmons/IdeaProjects/JavaEEPlatform/7.SpringAOP/productdemoaop)
+2024-11-18 10:21:19.497 [main] DEBUG c.e.x.j.productdemoaop.ProductDemoAOPApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-11-18 10:21:19.498 [main] INFO  c.e.x.j.productdemoaop.ProductDemoAOPApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-18 10:21:19.911 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-18 10:21:19.939 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2024-11-18 10:21:20.296 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-11-18 10:21:20.302 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-18 10:21:20.304 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-18 10:21:20.304 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-18 10:21:20.331 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-18 10:21:20.332 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 809 ms
+2024-11-18 10:21:20.578 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-11-18 10:21:20.624 [Druid-ConnectionPool-Create-1258159119] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/oomall_demo?serverTimezone=Asia/Shanghai, errorCode 0, state 08S01
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:845)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1682)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1803)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2914)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:140)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:969)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
+	... 9 common frames omitted
+2024-11-18 10:21:20.625 [Druid-ConnectionPool-Create-1258159119] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/oomall_demo?serverTimezone=Asia/Shanghai, errorCode 0, state 08S01
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:845)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1682)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1803)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2914)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:140)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:969)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
+	... 9 common frames omitted
+2024-11-18 10:21:20.625 [Druid-ConnectionPool-Create-1258159119] INFO  com.alibaba.druid.pool.DruidAbstractDataSource - {dataSource-1} failContinuous is true
+2024-11-18 10:21:21.132 [Druid-ConnectionPool-Create-1258159119] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/oomall_demo?serverTimezone=Asia/Shanghai, errorCode 0, state 08S01
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:845)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1682)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1803)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2914)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:140)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:969)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
+	... 9 common frames omitted
+2024-11-18 10:21:21.636 [Druid-ConnectionPool-Create-1258159119] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/oomall_demo?serverTimezone=Asia/Shanghai, errorCode 0, state 08S01
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:845)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1682)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1803)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2914)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:140)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:969)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
+	... 9 common frames omitted
+2024-11-18 10:21:22.142 [Druid-ConnectionPool-Create-1258159119] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/oomall_demo?serverTimezone=Asia/Shanghai, errorCode 0, state 08S01
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:845)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1682)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1803)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2914)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:140)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:969)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
+	... 9 common frames omitted
+2024-11-18 10:21:22.649 [Druid-ConnectionPool-Create-1258159119] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/oomall_demo?serverTimezone=Asia/Shanghai, errorCode 0, state 08S01
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:845)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1682)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1803)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2914)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:140)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:969)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
+	... 9 common frames omitted
+2024-11-18 10:21:23.156 [Druid-ConnectionPool-Create-1258159119] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/oomall_demo?serverTimezone=Asia/Shanghai, errorCode 0, state 08S01
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:845)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1682)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1803)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2914)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:140)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:969)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
+	... 9 common frames omitted
+2024-11-18 10:21:23.663 [Druid-ConnectionPool-Create-1258159119] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/oomall_demo?serverTimezone=Asia/Shanghai, errorCode 0, state 08S01
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:845)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1682)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1803)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2914)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:140)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:969)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
+	... 9 common frames omitted
+2024-11-18 10:21:24.168 [Druid-ConnectionPool-Create-1258159119] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/oomall_demo?serverTimezone=Asia/Shanghai, errorCode 0, state 08S01
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:845)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1682)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1803)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2914)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:140)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:969)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
+	... 9 common frames omitted
+2024-11-18 10:21:24.675 [Druid-ConnectionPool-Create-1258159119] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/oomall_demo?serverTimezone=Asia/Shanghai, errorCode 0, state 08S01
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:845)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1682)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1803)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2914)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:140)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:969)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
+	... 9 common frames omitted
+2024-11-18 10:21:25.182 [Druid-ConnectionPool-Create-1258159119] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/oomall_demo?serverTimezone=Asia/Shanghai, errorCode 0, state 08S01
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:845)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1682)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1803)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2914)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:140)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:969)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
+	... 9 common frames omitted
+2024-11-18 10:21:25.689 [Druid-ConnectionPool-Create-1258159119] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/oomall_demo?serverTimezone=Asia/Shanghai, errorCode 0, state 08S01
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:845)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1682)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1803)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2914)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:140)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:969)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
+	... 9 common frames omitted
+2024-11-18 10:21:26.196 [Druid-ConnectionPool-Create-1258159119] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/oomall_demo?serverTimezone=Asia/Shanghai, errorCode 0, state 08S01
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:845)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1682)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1803)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2914)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:140)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:969)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
+	... 9 common frames omitted
+2024-11-18 10:21:26.332 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-18 10:21:26.363 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-18 10:21:26.403 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-18 10:21:26.564 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-18 10:21:26.698 [Druid-ConnectionPool-Create-1258159119] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/oomall_demo?serverTimezone=Asia/Shanghai, errorCode 0, state 08S01
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:845)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1682)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1803)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2914)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:140)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:969)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
+	... 9 common frames omitted
+2024-11-18 10:21:27.205 [Druid-ConnectionPool-Create-1258159119] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/oomall_demo?serverTimezone=Asia/Shanghai, errorCode 0, state 08S01
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:845)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1682)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1803)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2914)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:140)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:969)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
+	... 9 common frames omitted
+2024-11-18 10:21:27.711 [Druid-ConnectionPool-Create-1258159119] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/oomall_demo?serverTimezone=Asia/Shanghai, errorCode 0, state 08S01
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:845)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1682)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1803)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2914)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:140)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:969)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
+	... 9 common frames omitted
+2024-11-18 10:21:28.218 [Druid-ConnectionPool-Create-1258159119] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/oomall_demo?serverTimezone=Asia/Shanghai, errorCode 0, state 08S01
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:165)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:55)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:845)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1682)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1803)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2914)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at jdk.internal.reflect.GeneratedConstructorAccessor41.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:79)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:140)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:969)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:144)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:53)
+	... 9 common frames omitted
+2024-11-18 10:21:50.125 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-18 10:21:50.145 [main] INFO  c.e.x.j.productdemoaop.ProductDemoAOPApplication - Starting ProductDemoAOPApplication using Java 17.0.12 with PID 22492 (/Users/llmons/IdeaProjects/JavaEEPlatform/7.SpringAOP/productdemoaop/target/classes started by llmons in /Users/llmons/IdeaProjects/JavaEEPlatform/7.SpringAOP/productdemoaop)
+2024-11-18 10:21:50.145 [main] DEBUG c.e.x.j.productdemoaop.ProductDemoAOPApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-11-18 10:21:50.145 [main] INFO  c.e.x.j.productdemoaop.ProductDemoAOPApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-18 10:21:50.560 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-18 10:21:50.585 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+2024-11-18 10:21:50.942 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-11-18 10:21:50.948 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-18 10:21:50.950 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-18 10:21:50.950 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-18 10:21:50.979 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-18 10:21:50.979 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 812 ms
+2024-11-18 10:21:51.227 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-11-18 10:21:51.442 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-18 10:21:51.476 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-18 10:21:51.494 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-18 10:21:51.642 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-18 10:21:52.115 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-18 10:21:52.116 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-18 10:21:52.500 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-18 10:21:53.037 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2024-11-18 10:21:53.086 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-18 10:21:53.102 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-11-18 10:21:53.113 [main] INFO  c.e.x.j.productdemoaop.ProductDemoAOPApplication - Started ProductDemoAOPApplication in 3.122 seconds (process running for 3.393)
+2024-11-18 10:22:10.096 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-18 10:22:10.097 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-18 10:22:10.105 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2024-11-18 10:22:19.699 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.m.ProductAllMapper.getProductWithAll - ==>  Preparing: SELECT `id`, `shop_id`, `goods_id`, `category_id`, `template_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `status`, `commission_ratio`, `shop_logistic_id`, `free_threshold` FROM goods_product WHERE ((`name` = ?))
+2024-11-18 10:22:19.716 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.m.ProductAllMapper.getProductWithAll - ==> Parameters: 欢乐家岭南杂果罐头(String)
+2024-11-18 10:22:19.749 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.m.P.selectLastOnSaleByProductId - ====>  Preparing: select `id`, `product_id`, `price`, `begin_time`, `end_time`, `quantity`, `max_quantity`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified` from goods_onsale where `product_id` = ? and `begin_time` <= NOW() and `end_time` > NOW()
+2024-11-18 10:22:19.749 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.m.P.selectLastOnSaleByProductId - ====> Parameters: 1553(Long)
+2024-11-18 10:22:19.759 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.m.P.selectLastOnSaleByProductId - <====      Total: 1
+2024-11-18 10:22:19.760 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.m.ProductAllMapper.selectOtherProduct - ====>  Preparing: select `id`, `goods_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified` from goods_product where `goods_id` = ?
+2024-11-18 10:22:19.760 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.m.ProductAllMapper.selectOtherProduct - ====> Parameters: 12(Long)
+2024-11-18 10:22:19.770 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.m.ProductAllMapper.selectOtherProduct - <====      Total: 15
+2024-11-18 10:22:19.770 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.m.ProductAllMapper.getProductWithAll - <==      Total: 1
+2024-11-18 10:22:20.221 [http-nio-8080-exec-3] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:22:20.222 [http-nio-8080-exec-3] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById_Jpa: id = 1553, all = true
+2024-11-18 10:22:21.737 [http-nio-8080-exec-4] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:22:21.738 [http-nio-8080-exec-4] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById: id = 1553, all = true
+2024-11-18 10:22:21.739 [http-nio-8080-exec-4] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - ==>  Preparing: select `id`, `shop_id`, `goods_id`, `category_id`, `template_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `status`, `commission_ratio`, `shop_logistic_id`, `free_threshold` from goods_product where `id` = ?
+2024-11-18 10:22:21.740 [http-nio-8080-exec-4] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - ==> Parameters: 1553(Long)
+2024-11-18 10:22:21.744 [http-nio-8080-exec-4] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - <==      Total: 1
+2024-11-18 10:22:21.751 [http-nio-8080-exec-4] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - ==>  Preparing: SELECT `id`, `shop_id`, `product_id`, `price`, `begin_time`, `end_time`, `quantity`, `type`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `max_quantity`, `invalid` FROM goods_onsale WHERE ((`product_id` = ? and `begin_time` <= ? and `end_time` >= ?)) ORDER BY end_time DESC
+2024-11-18 10:22:21.751 [http-nio-8080-exec-4] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - ==> Parameters: 1553(Long), 2024-11-18T10:22:21.745226(LocalDateTime), 2024-11-18T10:22:21.745226(LocalDateTime)
+2024-11-18 10:22:21.764 [http-nio-8080-exec-4] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - <==      Total: 1
+2024-11-18 10:22:21.765 [http-nio-8080-exec-4] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - ==>  Preparing: SELECT `id`, `shop_id`, `goods_id`, `category_id`, `template_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `status`, `commission_ratio`, `shop_logistic_id`, `free_threshold` FROM goods_product WHERE ((`goods_id` = ? and `id` <> ?))
+2024-11-18 10:22:21.765 [http-nio-8080-exec-4] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - ==> Parameters: 12(Long), 1553(Long)
+2024-11-18 10:22:21.778 [http-nio-8080-exec-4] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - <==      Total: 14
+2024-11-18 10:22:23.466 [http-nio-8080-exec-5] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:22:23.467 [http-nio-8080-exec-5] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById_Jpa: id = 1553, all = true
+2024-11-18 10:22:27.274 [http-nio-8080-exec-6] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:22:27.276 [http-nio-8080-exec-6] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById: id = 1553, all = true
+2024-11-18 10:22:27.276 [http-nio-8080-exec-6] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - ==>  Preparing: select `id`, `shop_id`, `goods_id`, `category_id`, `template_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `status`, `commission_ratio`, `shop_logistic_id`, `free_threshold` from goods_product where `id` = ?
+2024-11-18 10:22:27.276 [http-nio-8080-exec-6] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - ==> Parameters: 1553(Long)
+2024-11-18 10:22:27.278 [http-nio-8080-exec-6] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - <==      Total: 1
+2024-11-18 10:22:27.279 [http-nio-8080-exec-6] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - ==>  Preparing: SELECT `id`, `shop_id`, `product_id`, `price`, `begin_time`, `end_time`, `quantity`, `type`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `max_quantity`, `invalid` FROM goods_onsale WHERE ((`product_id` = ? and `begin_time` <= ? and `end_time` >= ?)) ORDER BY end_time DESC
+2024-11-18 10:22:27.279 [http-nio-8080-exec-6] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - ==> Parameters: 1553(Long), 2024-11-18T10:22:27.278879(LocalDateTime), 2024-11-18T10:22:27.278879(LocalDateTime)
+2024-11-18 10:22:27.286 [http-nio-8080-exec-6] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - <==      Total: 1
+2024-11-18 10:22:27.287 [http-nio-8080-exec-6] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - ==>  Preparing: SELECT `id`, `shop_id`, `goods_id`, `category_id`, `template_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `status`, `commission_ratio`, `shop_logistic_id`, `free_threshold` FROM goods_product WHERE ((`goods_id` = ? and `id` <> ?))
+2024-11-18 10:22:27.288 [http-nio-8080-exec-6] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - ==> Parameters: 12(Long), 1553(Long)
+2024-11-18 10:22:27.298 [http-nio-8080-exec-6] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - <==      Total: 14
+2024-11-18 10:23:05.312 [http-nio-8080-exec-8] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:23:05.348 [http-nio-8080-exec-8] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById: id = 1553, all = true
+2024-11-18 10:23:05.348 [http-nio-8080-exec-8] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - ==>  Preparing: select `id`, `shop_id`, `goods_id`, `category_id`, `template_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `status`, `commission_ratio`, `shop_logistic_id`, `free_threshold` from goods_product where `id` = ?
+2024-11-18 10:23:05.349 [http-nio-8080-exec-8] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - ==> Parameters: 1553(Long)
+2024-11-18 10:23:05.359 [http-nio-8080-exec-8] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - <==      Total: 1
+2024-11-18 10:23:05.360 [http-nio-8080-exec-8] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - ==>  Preparing: SELECT `id`, `shop_id`, `product_id`, `price`, `begin_time`, `end_time`, `quantity`, `type`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `max_quantity`, `invalid` FROM goods_onsale WHERE ((`product_id` = ? and `begin_time` <= ? and `end_time` >= ?)) ORDER BY end_time DESC
+2024-11-18 10:23:05.362 [http-nio-8080-exec-8] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - ==> Parameters: 1553(Long), 2024-11-18T10:23:05.359555(LocalDateTime), 2024-11-18T10:23:05.359555(LocalDateTime)
+2024-11-18 10:23:05.368 [http-nio-8080-exec-8] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - <==      Total: 1
+2024-11-18 10:23:05.369 [http-nio-8080-exec-8] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - ==>  Preparing: SELECT `id`, `shop_id`, `goods_id`, `category_id`, `template_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `status`, `commission_ratio`, `shop_logistic_id`, `free_threshold` FROM goods_product WHERE ((`goods_id` = ? and `id` <> ?))
+2024-11-18 10:23:05.369 [http-nio-8080-exec-8] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - ==> Parameters: 12(Long), 1553(Long)
+2024-11-18 10:23:05.377 [http-nio-8080-exec-8] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - <==      Total: 14
+2024-11-18 10:25:19.154 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-18 10:25:19.158 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-11-18 10:25:19.164 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-11-18 10:26:01.110 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-18 10:26:01.131 [main] INFO  c.e.x.j.productdemoaop.ProductDemoAOPApplication - Starting ProductDemoAOPApplication using Java 17.0.12 with PID 23298 (/Users/llmons/IdeaProjects/JavaEEPlatform/7.SpringAOP/productdemoaop/target/classes started by llmons in /Users/llmons/IdeaProjects/JavaEEPlatform/7.SpringAOP/productdemoaop)
+2024-11-18 10:26:01.134 [main] DEBUG c.e.x.j.productdemoaop.ProductDemoAOPApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-11-18 10:26:01.134 [main] INFO  c.e.x.j.productdemoaop.ProductDemoAOPApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-18 10:26:01.561 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-18 10:26:01.584 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2024-11-18 10:26:01.934 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-11-18 10:26:01.940 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-18 10:26:01.941 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-18 10:26:01.942 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-18 10:26:01.975 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-18 10:26:01.975 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 817 ms
+2024-11-18 10:26:02.215 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-11-18 10:26:02.424 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-18 10:26:02.458 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-18 10:26:02.475 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-18 10:26:02.615 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-18 10:26:03.071 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-18 10:26:03.072 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-18 10:26:03.459 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-18 10:26:03.845 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2024-11-18 10:26:03.878 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-18 10:26:03.892 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-11-18 10:26:03.901 [main] INFO  c.e.x.j.productdemoaop.ProductDemoAOPApplication - Started ProductDemoAOPApplication in 2.924 seconds (process running for 3.198)
+2024-11-18 10:26:11.836 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-18 10:26:11.837 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-18 10:26:11.842 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2024-11-18 10:26:11.876 [http-nio-8080-exec-1] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:26:11.881 [http-nio-8080-exec-1] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById: id = 1553, all = true
+2024-11-18 10:26:11.891 [http-nio-8080-exec-1] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - ==>  Preparing: select `id`, `shop_id`, `goods_id`, `category_id`, `template_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `status`, `commission_ratio`, `shop_logistic_id`, `free_threshold` from goods_product where `id` = ?
+2024-11-18 10:26:11.904 [http-nio-8080-exec-1] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - ==> Parameters: 1553(Long)
+2024-11-18 10:26:11.936 [http-nio-8080-exec-1] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - <==      Total: 1
+2024-11-18 10:26:11.944 [http-nio-8080-exec-1] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - ==>  Preparing: SELECT `id`, `shop_id`, `product_id`, `price`, `begin_time`, `end_time`, `quantity`, `type`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `max_quantity`, `invalid` FROM goods_onsale WHERE ((`product_id` = ? and `begin_time` <= ? and `end_time` >= ?)) ORDER BY end_time DESC
+2024-11-18 10:26:11.944 [http-nio-8080-exec-1] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - ==> Parameters: 1553(Long), 2024-11-18T10:26:11.938545(LocalDateTime), 2024-11-18T10:26:11.938545(LocalDateTime)
+2024-11-18 10:26:11.955 [http-nio-8080-exec-1] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - <==      Total: 1
+2024-11-18 10:26:11.959 [http-nio-8080-exec-1] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - ==>  Preparing: SELECT `id`, `shop_id`, `goods_id`, `category_id`, `template_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `status`, `commission_ratio`, `shop_logistic_id`, `free_threshold` FROM goods_product WHERE ((`goods_id` = ? and `id` <> ?))
+2024-11-18 10:26:11.959 [http-nio-8080-exec-1] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - ==> Parameters: 12(Long), 1553(Long)
+2024-11-18 10:26:11.970 [http-nio-8080-exec-1] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - <==      Total: 14
+2024-11-18 10:26:15.989 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:26:15.991 [http-nio-8080-exec-2] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById: id = 1553, all = true
+2024-11-18 10:26:15.992 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - ==>  Preparing: select `id`, `shop_id`, `goods_id`, `category_id`, `template_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `status`, `commission_ratio`, `shop_logistic_id`, `free_threshold` from goods_product where `id` = ?
+2024-11-18 10:26:15.993 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - ==> Parameters: 1553(Long)
+2024-11-18 10:26:16.000 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - <==      Total: 1
+2024-11-18 10:26:16.002 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - ==>  Preparing: SELECT `id`, `shop_id`, `product_id`, `price`, `begin_time`, `end_time`, `quantity`, `type`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `max_quantity`, `invalid` FROM goods_onsale WHERE ((`product_id` = ? and `begin_time` <= ? and `end_time` >= ?)) ORDER BY end_time DESC
+2024-11-18 10:26:16.002 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - ==> Parameters: 1553(Long), 2024-11-18T10:26:16.001314(LocalDateTime), 2024-11-18T10:26:16.001314(LocalDateTime)
+2024-11-18 10:26:16.009 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - <==      Total: 1
+2024-11-18 10:26:16.010 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - ==>  Preparing: SELECT `id`, `shop_id`, `goods_id`, `category_id`, `template_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `status`, `commission_ratio`, `shop_logistic_id`, `free_threshold` FROM goods_product WHERE ((`goods_id` = ? and `id` <> ?))
+2024-11-18 10:26:16.010 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - ==> Parameters: 12(Long), 1553(Long)
+2024-11-18 10:26:16.021 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - <==      Total: 14
+2024-11-18 10:26:39.511 [http-nio-8080-exec-3] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:26:39.516 [http-nio-8080-exec-3] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById: id = 1553, all = true
+2024-11-18 10:26:39.518 [http-nio-8080-exec-3] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - ==>  Preparing: select `id`, `shop_id`, `goods_id`, `category_id`, `template_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `status`, `commission_ratio`, `shop_logistic_id`, `free_threshold` from goods_product where `id` = ?
+2024-11-18 10:26:39.519 [http-nio-8080-exec-3] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - ==> Parameters: 1553(Long)
+2024-11-18 10:26:39.522 [http-nio-8080-exec-3] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - <==      Total: 1
+2024-11-18 10:26:39.524 [http-nio-8080-exec-3] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - ==>  Preparing: SELECT `id`, `shop_id`, `product_id`, `price`, `begin_time`, `end_time`, `quantity`, `type`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `max_quantity`, `invalid` FROM goods_onsale WHERE ((`product_id` = ? and `begin_time` <= ? and `end_time` >= ?)) ORDER BY end_time DESC
+2024-11-18 10:26:39.526 [http-nio-8080-exec-3] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - ==> Parameters: 1553(Long), 2024-11-18T10:26:39.523053(LocalDateTime), 2024-11-18T10:26:39.523053(LocalDateTime)
+2024-11-18 10:26:39.533 [http-nio-8080-exec-3] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - <==      Total: 1
+2024-11-18 10:26:39.534 [http-nio-8080-exec-3] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - ==>  Preparing: SELECT `id`, `shop_id`, `goods_id`, `category_id`, `template_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `status`, `commission_ratio`, `shop_logistic_id`, `free_threshold` FROM goods_product WHERE ((`goods_id` = ? and `id` <> ?))
+2024-11-18 10:26:39.534 [http-nio-8080-exec-3] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - ==> Parameters: 12(Long), 1553(Long)
+2024-11-18 10:26:39.542 [http-nio-8080-exec-3] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - <==      Total: 14
+2024-11-18 10:26:40.144 [http-nio-8080-exec-4] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:26:40.146 [http-nio-8080-exec-4] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById_Jpa: id = 1553, all = true
+2024-11-18 10:26:41.385 [http-nio-8080-exec-5] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:26:41.386 [http-nio-8080-exec-5] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById_Jpa: id = 1553, all = true
+2024-11-18 10:26:57.310 [http-nio-8080-exec-6] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:26:57.325 [http-nio-8080-exec-6] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById_Jpa: id = 1553, all = true
+2024-11-18 10:27:03.309 [http-nio-8080-exec-7] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:27:03.312 [http-nio-8080-exec-7] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById_Jpa: id = 1553, all = true
+2024-11-18 10:27:17.880 [http-nio-8080-exec-8] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:27:17.885 [http-nio-8080-exec-8] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById: id = 1553, all = true
+2024-11-18 10:27:17.886 [http-nio-8080-exec-8] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - ==>  Preparing: select `id`, `shop_id`, `goods_id`, `category_id`, `template_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `status`, `commission_ratio`, `shop_logistic_id`, `free_threshold` from goods_product where `id` = ?
+2024-11-18 10:27:17.889 [http-nio-8080-exec-8] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - ==> Parameters: 1553(Long)
+2024-11-18 10:27:17.895 [http-nio-8080-exec-8] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - <==      Total: 1
+2024-11-18 10:27:17.898 [http-nio-8080-exec-8] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - ==>  Preparing: SELECT `id`, `shop_id`, `product_id`, `price`, `begin_time`, `end_time`, `quantity`, `type`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `max_quantity`, `invalid` FROM goods_onsale WHERE ((`product_id` = ? and `begin_time` <= ? and `end_time` >= ?)) ORDER BY end_time DESC
+2024-11-18 10:27:17.898 [http-nio-8080-exec-8] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - ==> Parameters: 1553(Long), 2024-11-18T10:27:17.897377(LocalDateTime), 2024-11-18T10:27:17.897377(LocalDateTime)
+2024-11-18 10:27:17.909 [http-nio-8080-exec-8] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - <==      Total: 1
+2024-11-18 10:27:17.910 [http-nio-8080-exec-8] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - ==>  Preparing: SELECT `id`, `shop_id`, `goods_id`, `category_id`, `template_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `status`, `commission_ratio`, `shop_logistic_id`, `free_threshold` FROM goods_product WHERE ((`goods_id` = ? and `id` <> ?))
+2024-11-18 10:27:17.912 [http-nio-8080-exec-8] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - ==> Parameters: 12(Long), 1553(Long)
+2024-11-18 10:27:17.924 [http-nio-8080-exec-8] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - <==      Total: 14
+2024-11-18 10:27:43.830 [http-nio-8080-exec-9] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:27:43.837 [http-nio-8080-exec-9] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById_Jpa: id = 1553, all = true
+2024-11-18 10:28:00.771 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-18 10:28:00.778 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-11-18 10:28:00.785 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-11-18 10:28:12.031 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-18 10:28:12.058 [main] INFO  c.e.x.j.productdemoaop.ProductDemoAOPApplication - Starting ProductDemoAOPApplication using Java 17.0.12 with PID 23745 (/Users/llmons/IdeaProjects/JavaEEPlatform/7.SpringAOP/productdemoaop/target/classes started by llmons in /Users/llmons/IdeaProjects/JavaEEPlatform/7.SpringAOP/productdemoaop)
+2024-11-18 10:28:12.060 [main] DEBUG c.e.x.j.productdemoaop.ProductDemoAOPApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-11-18 10:28:12.061 [main] INFO  c.e.x.j.productdemoaop.ProductDemoAOPApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-18 10:28:12.497 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-18 10:28:12.521 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2024-11-18 10:28:12.902 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-11-18 10:28:12.908 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-18 10:28:12.910 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-18 10:28:12.910 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-18 10:28:12.938 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-18 10:28:12.938 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 852 ms
+2024-11-18 10:28:13.238 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-11-18 10:28:13.506 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-18 10:28:13.545 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-18 10:28:13.567 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-18 10:28:13.711 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-18 10:28:14.204 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-18 10:28:14.205 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-18 10:28:14.609 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-18 10:28:15.101 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2024-11-18 10:28:15.145 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-18 10:28:15.200 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-11-18 10:28:15.210 [main] INFO  c.e.x.j.productdemoaop.ProductDemoAOPApplication - Started ProductDemoAOPApplication in 3.333 seconds (process running for 3.657)
+2024-11-18 10:28:21.490 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-18 10:28:21.490 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-18 10:28:21.493 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-11-18 10:28:21.539 [http-nio-8080-exec-1] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:28:21.545 [http-nio-8080-exec-1] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById_Jpa: id = 1553, all = true
+2024-11-18 10:28:47.822 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-18 10:28:47.830 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-11-18 10:28:47.837 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-11-18 10:31:18.526 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-18 10:31:18.551 [main] INFO  c.e.x.j.productdemoaop.ProductDemoAOPApplication - Starting ProductDemoAOPApplication using Java 17.0.12 with PID 24247 (/Users/llmons/IdeaProjects/JavaEEPlatform/7.SpringAOP/productdemoaop/target/classes started by llmons in /Users/llmons/IdeaProjects/JavaEEPlatform/7.SpringAOP/productdemoaop)
+2024-11-18 10:31:18.552 [main] DEBUG c.e.x.j.productdemoaop.ProductDemoAOPApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-11-18 10:31:18.552 [main] INFO  c.e.x.j.productdemoaop.ProductDemoAOPApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-18 10:31:18.978 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-18 10:31:19.006 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2024-11-18 10:31:19.361 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-11-18 10:31:19.366 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-18 10:31:19.368 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-18 10:31:19.368 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-18 10:31:19.395 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-18 10:31:19.395 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 814 ms
+2024-11-18 10:31:19.640 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-11-18 10:31:19.819 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-18 10:31:19.851 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-18 10:31:19.870 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-18 10:31:20.016 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-18 10:31:20.465 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-18 10:31:20.467 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-18 10:31:20.861 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-18 10:31:21.251 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2024-11-18 10:31:21.284 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-18 10:31:21.295 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-11-18 10:31:21.304 [main] INFO  c.e.x.j.productdemoaop.ProductDemoAOPApplication - Started ProductDemoAOPApplication in 2.923 seconds (process running for 3.204)
+2024-11-18 10:31:24.090 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-18 10:31:24.094 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-11-18 10:31:24.099 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-11-18 10:31:55.340 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-18 10:31:55.361 [main] INFO  c.e.x.j.productdemoaop.ProductDemoAOPApplication - Starting ProductDemoAOPApplication using Java 17.0.12 with PID 24369 (/Users/llmons/IdeaProjects/JavaEEPlatform/7.SpringAOP/productdemoaop/target/classes started by llmons in /Users/llmons/IdeaProjects/JavaEEPlatform/7.SpringAOP/productdemoaop)
+2024-11-18 10:31:55.361 [main] DEBUG c.e.x.j.productdemoaop.ProductDemoAOPApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-11-18 10:31:55.362 [main] INFO  c.e.x.j.productdemoaop.ProductDemoAOPApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-18 10:31:55.768 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-18 10:31:55.795 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 2 JPA repository interfaces.
+2024-11-18 10:31:56.153 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-11-18 10:31:56.158 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-18 10:31:56.160 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-18 10:31:56.160 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-18 10:31:56.185 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-18 10:31:56.186 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 801 ms
+2024-11-18 10:31:56.428 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-11-18 10:31:56.606 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-18 10:31:56.637 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-18 10:31:56.659 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-18 10:31:56.804 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-18 10:31:57.245 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-18 10:31:57.246 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-18 10:31:57.630 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-18 10:31:58.021 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2024-11-18 10:31:58.054 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-18 10:31:58.064 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-11-18 10:31:58.073 [main] INFO  c.e.x.j.productdemoaop.ProductDemoAOPApplication - Started ProductDemoAOPApplication in 2.878 seconds (process running for 3.154)
+2024-11-18 10:32:05.514 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-18 10:32:05.514 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-18 10:32:05.515 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-11-18 10:32:05.546 [http-nio-8080-exec-1] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:32:05.550 [http-nio-8080-exec-1] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById_Jpa: id = 1553, all = true
+2024-11-18 10:32:05.572 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        ppe1_0.id,
+        ppe1_0.barcode,
+        ppe1_0.category_id,
+        ppe1_0.commission_ratio,
+        ppe1_0.creator_id,
+        ppe1_0.creator_name,
+        ppe1_0.free_threshold,
+        ppe1_0.gmt_create,
+        ppe1_0.gmt_modified,
+        ppe1_0.goods_id,
+        ppe1_0.modifier_id,
+        ppe1_0.modifier_name,
+        ppe1_0.name,
+        ppe1_0.origin_place,
+        ppe1_0.original_price,
+        ppe1_0.shop_id,
+        ppe1_0.shop_logistic_id,
+        ppe1_0.sku_sn,
+        ppe1_0.status,
+        ppe1_0.template_id,
+        ppe1_0.unit,
+        ppe1_0.weight 
+    from
+        goods_product ppe1_0 
+    where
+        ppe1_0.id=?
+2024-11-18 10:32:05.631 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        ospe1_0.id,
+        ospe1_0.begin_time,
+        ospe1_0.creator_id,
+        ospe1_0.creator_name,
+        ospe1_0.end_time,
+        ospe1_0.gmt_create,
+        ospe1_0.gmt_modified,
+        ospe1_0.invalid,
+        ospe1_0.max_quantity,
+        ospe1_0.modifier_id,
+        ospe1_0.modifier_name,
+        ospe1_0.price,
+        ospe1_0.product_id,
+        ospe1_0.quantity,
+        ospe1_0.shop_id,
+        ospe1_0.type 
+    from
+        goods_onsale ospe1_0 
+    where
+        ospe1_0.product_id=? 
+        and ospe1_0.begin_time<=? 
+        and ospe1_0.end_time>=? 
+    order by
+        ospe1_0.end_time desc
+2024-11-18 10:32:05.646 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        ppe1_0.id,
+        ppe1_0.barcode,
+        ppe1_0.category_id,
+        ppe1_0.commission_ratio,
+        ppe1_0.creator_id,
+        ppe1_0.creator_name,
+        ppe1_0.free_threshold,
+        ppe1_0.gmt_create,
+        ppe1_0.gmt_modified,
+        ppe1_0.goods_id,
+        ppe1_0.modifier_id,
+        ppe1_0.modifier_name,
+        ppe1_0.name,
+        ppe1_0.origin_place,
+        ppe1_0.original_price,
+        ppe1_0.shop_id,
+        ppe1_0.shop_logistic_id,
+        ppe1_0.sku_sn,
+        ppe1_0.status,
+        ppe1_0.template_id,
+        ppe1_0.unit,
+        ppe1_0.weight 
+    from
+        goods_product ppe1_0 
+    where
+        ppe1_0.goods_id=? 
+        and ppe1_0.id<>?
+2024-11-18 10:32:21.901 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:32:21.906 [http-nio-8080-exec-2] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById: id = 1553, all = true
+2024-11-18 10:32:21.931 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - ==>  Preparing: select `id`, `shop_id`, `goods_id`, `category_id`, `template_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `status`, `commission_ratio`, `shop_logistic_id`, `free_threshold` from goods_product where `id` = ?
+2024-11-18 10:32:21.942 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - ==> Parameters: 1553(Long)
+2024-11-18 10:32:21.954 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - <==      Total: 1
+2024-11-18 10:32:21.961 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - ==>  Preparing: SELECT `id`, `shop_id`, `product_id`, `price`, `begin_time`, `end_time`, `quantity`, `type`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `max_quantity`, `invalid` FROM goods_onsale WHERE ((`product_id` = ? and `begin_time` <= ? and `end_time` >= ?)) ORDER BY end_time DESC
+2024-11-18 10:32:21.962 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - ==> Parameters: 1553(Long), 2024-11-18T10:32:21.955567(LocalDateTime), 2024-11-18T10:32:21.955567(LocalDateTime)
+2024-11-18 10:32:21.974 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - <==      Total: 1
+2024-11-18 10:32:21.978 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - ==>  Preparing: SELECT `id`, `shop_id`, `goods_id`, `category_id`, `template_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `status`, `commission_ratio`, `shop_logistic_id`, `free_threshold` FROM goods_product WHERE ((`goods_id` = ? and `id` <> ?))
+2024-11-18 10:32:21.978 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - ==> Parameters: 12(Long), 1553(Long)
+2024-11-18 10:32:21.993 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - <==      Total: 14
+2024-11-18 10:33:01.137 [http-nio-8080-exec-4] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:33:01.141 [http-nio-8080-exec-4] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById_Jpa: id = 1553, all = true
+2024-11-18 10:33:01.146 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        ppe1_0.id,
+        ppe1_0.barcode,
+        ppe1_0.category_id,
+        ppe1_0.commission_ratio,
+        ppe1_0.creator_id,
+        ppe1_0.creator_name,
+        ppe1_0.free_threshold,
+        ppe1_0.gmt_create,
+        ppe1_0.gmt_modified,
+        ppe1_0.goods_id,
+        ppe1_0.modifier_id,
+        ppe1_0.modifier_name,
+        ppe1_0.name,
+        ppe1_0.origin_place,
+        ppe1_0.original_price,
+        ppe1_0.shop_id,
+        ppe1_0.shop_logistic_id,
+        ppe1_0.sku_sn,
+        ppe1_0.status,
+        ppe1_0.template_id,
+        ppe1_0.unit,
+        ppe1_0.weight 
+    from
+        goods_product ppe1_0 
+    where
+        ppe1_0.id=?
+2024-11-18 10:33:01.162 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        ospe1_0.id,
+        ospe1_0.begin_time,
+        ospe1_0.creator_id,
+        ospe1_0.creator_name,
+        ospe1_0.end_time,
+        ospe1_0.gmt_create,
+        ospe1_0.gmt_modified,
+        ospe1_0.invalid,
+        ospe1_0.max_quantity,
+        ospe1_0.modifier_id,
+        ospe1_0.modifier_name,
+        ospe1_0.price,
+        ospe1_0.product_id,
+        ospe1_0.quantity,
+        ospe1_0.shop_id,
+        ospe1_0.type 
+    from
+        goods_onsale ospe1_0 
+    where
+        ospe1_0.product_id=? 
+        and ospe1_0.begin_time<=? 
+        and ospe1_0.end_time>=? 
+    order by
+        ospe1_0.end_time desc
+2024-11-18 10:33:01.177 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        ppe1_0.id,
+        ppe1_0.barcode,
+        ppe1_0.category_id,
+        ppe1_0.commission_ratio,
+        ppe1_0.creator_id,
+        ppe1_0.creator_name,
+        ppe1_0.free_threshold,
+        ppe1_0.gmt_create,
+        ppe1_0.gmt_modified,
+        ppe1_0.goods_id,
+        ppe1_0.modifier_id,
+        ppe1_0.modifier_name,
+        ppe1_0.name,
+        ppe1_0.origin_place,
+        ppe1_0.original_price,
+        ppe1_0.shop_id,
+        ppe1_0.shop_logistic_id,
+        ppe1_0.sku_sn,
+        ppe1_0.status,
+        ppe1_0.template_id,
+        ppe1_0.unit,
+        ppe1_0.weight 
+    from
+        goods_product ppe1_0 
+    where
+        ppe1_0.goods_id=? 
+        and ppe1_0.id<>?
+2024-11-18 10:33:46.551 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-18 10:33:46.558 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-11-18 10:33:46.565 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2024-11-18 10:36:30.868 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-18 10:36:30.888 [main] INFO  c.e.x.j.productdemoaop.ProductDemoAOPApplication - Starting ProductDemoAOPApplication using Java 17.0.12 with PID 25314 (/Users/llmons/IdeaProjects/JavaEEPlatform/7.SpringAOP/productdemoaop/target/classes started by llmons in /Users/llmons/IdeaProjects/JavaEEPlatform/7.SpringAOP/productdemoaop)
+2024-11-18 10:36:30.888 [main] DEBUG c.e.x.j.productdemoaop.ProductDemoAOPApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-11-18 10:36:30.890 [main] INFO  c.e.x.j.productdemoaop.ProductDemoAOPApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-18 10:36:31.302 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-18 10:36:31.327 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2024-11-18 10:36:31.681 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-11-18 10:36:31.687 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-18 10:36:31.689 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-18 10:36:31.689 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-18 10:36:31.719 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-18 10:36:31.720 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 809 ms
+2024-11-18 10:36:31.969 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2024-11-18 10:36:32.201 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-18 10:36:32.232 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-18 10:36:32.250 [main] INFO  o.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-18 10:36:32.393 [main] INFO  o.s.o.j.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-18 10:36:32.860 [main] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-18 10:36:32.861 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-18 10:36:33.253 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-18 10:36:33.644 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2024-11-18 10:36:33.677 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-18 10:36:33.689 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-11-18 10:36:33.698 [main] INFO  c.e.x.j.productdemoaop.ProductDemoAOPApplication - Started ProductDemoAOPApplication in 2.969 seconds (process running for 3.234)
+2024-11-18 10:36:53.482 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-18 10:36:53.482 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-18 10:36:53.485 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-11-18 10:36:53.521 [http-nio-8080-exec-1] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:36:53.557 [http-nio-8080-exec-1] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById: id = 1553, all = true
+2024-11-18 10:36:53.571 [http-nio-8080-exec-1] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - ==>  Preparing: select `id`, `shop_id`, `goods_id`, `category_id`, `template_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `status`, `commission_ratio`, `shop_logistic_id`, `free_threshold` from goods_product where `id` = ?
+2024-11-18 10:36:53.582 [http-nio-8080-exec-1] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - ==> Parameters: 1553(Long)
+2024-11-18 10:36:53.623 [http-nio-8080-exec-1] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByPrimaryKey - <==      Total: 1
+2024-11-18 10:36:53.631 [http-nio-8080-exec-1] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - ==>  Preparing: SELECT `id`, `shop_id`, `product_id`, `price`, `begin_time`, `end_time`, `quantity`, `type`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `max_quantity`, `invalid` FROM goods_onsale WHERE ((`product_id` = ? and `begin_time` <= ? and `end_time` >= ?)) ORDER BY end_time DESC
+2024-11-18 10:36:53.631 [http-nio-8080-exec-1] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - ==> Parameters: 1553(Long), 2024-11-18T10:36:53.625868(LocalDateTime), 2024-11-18T10:36:53.625868(LocalDateTime)
+2024-11-18 10:36:53.638 [http-nio-8080-exec-1] DEBUG c.e.x.j.p.m.g.OnSalePoMapper.selectByExample - <==      Total: 1
+2024-11-18 10:36:53.643 [http-nio-8080-exec-1] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - ==>  Preparing: SELECT `id`, `shop_id`, `goods_id`, `category_id`, `template_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `status`, `commission_ratio`, `shop_logistic_id`, `free_threshold` FROM goods_product WHERE ((`goods_id` = ? and `id` <> ?))
+2024-11-18 10:36:53.643 [http-nio-8080-exec-1] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - ==> Parameters: 12(Long), 1553(Long)
+2024-11-18 10:36:53.652 [http-nio-8080-exec-1] DEBUG c.e.x.j.p.m.g.ProductPoMapper.selectByExample - <==      Total: 14
+2024-11-18 10:36:54.432 [http-nio-8080-exec-2] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:36:54.433 [http-nio-8080-exec-2] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById_Jpa: id = 1553, all = true
+2024-11-18 10:36:54.477 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        ppe1_0.id,
+        ppe1_0.barcode,
+        ppe1_0.category_id,
+        ppe1_0.commission_ratio,
+        ppe1_0.creator_id,
+        ppe1_0.creator_name,
+        ppe1_0.free_threshold,
+        ppe1_0.gmt_create,
+        ppe1_0.gmt_modified,
+        ppe1_0.goods_id,
+        ppe1_0.modifier_id,
+        ppe1_0.modifier_name,
+        ppe1_0.name,
+        ppe1_0.origin_place,
+        ppe1_0.original_price,
+        ppe1_0.shop_id,
+        ppe1_0.shop_logistic_id,
+        ppe1_0.sku_sn,
+        ppe1_0.status,
+        ppe1_0.template_id,
+        ppe1_0.unit,
+        ppe1_0.weight 
+    from
+        goods_product ppe1_0 
+    where
+        ppe1_0.id=?
+2024-11-18 10:36:54.546 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        ospe1_0.id,
+        ospe1_0.begin_time,
+        ospe1_0.creator_id,
+        ospe1_0.creator_name,
+        ospe1_0.end_time,
+        ospe1_0.gmt_create,
+        ospe1_0.gmt_modified,
+        ospe1_0.invalid,
+        ospe1_0.max_quantity,
+        ospe1_0.modifier_id,
+        ospe1_0.modifier_name,
+        ospe1_0.price,
+        ospe1_0.product_id,
+        ospe1_0.quantity,
+        ospe1_0.shop_id,
+        ospe1_0.type 
+    from
+        goods_onsale ospe1_0 
+    where
+        ospe1_0.product_id=? 
+        and ospe1_0.begin_time<=? 
+        and ospe1_0.end_time>=? 
+    order by
+        ospe1_0.end_time desc
+2024-11-18 10:36:54.561 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        ppe1_0.id,
+        ppe1_0.barcode,
+        ppe1_0.category_id,
+        ppe1_0.commission_ratio,
+        ppe1_0.creator_id,
+        ppe1_0.creator_name,
+        ppe1_0.free_threshold,
+        ppe1_0.gmt_create,
+        ppe1_0.gmt_modified,
+        ppe1_0.goods_id,
+        ppe1_0.modifier_id,
+        ppe1_0.modifier_name,
+        ppe1_0.name,
+        ppe1_0.origin_place,
+        ppe1_0.original_price,
+        ppe1_0.shop_id,
+        ppe1_0.shop_logistic_id,
+        ppe1_0.sku_sn,
+        ppe1_0.status,
+        ppe1_0.template_id,
+        ppe1_0.unit,
+        ppe1_0.weight 
+    from
+        goods_product ppe1_0 
+    where
+        ppe1_0.goods_id=? 
+        and ppe1_0.id<>?
+2024-11-18 10:36:56.553 [http-nio-8080-exec-3] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:36:56.555 [http-nio-8080-exec-3] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById_manual: id = 1553
+2024-11-18 10:36:56.556 [http-nio-8080-exec-3] DEBUG c.e.x.j.p.m.m.ProductAllMapper.getProductWithAll - ==>  Preparing: SELECT `id`, `shop_id`, `goods_id`, `category_id`, `template_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `status`, `commission_ratio`, `shop_logistic_id`, `free_threshold` FROM goods_product WHERE ((`id` = ?))
+2024-11-18 10:36:56.557 [http-nio-8080-exec-3] DEBUG c.e.x.j.p.m.m.ProductAllMapper.getProductWithAll - ==> Parameters: 1553(Long)
+2024-11-18 10:36:56.560 [http-nio-8080-exec-3] DEBUG c.e.x.j.p.m.m.P.selectLastOnSaleByProductId - ====>  Preparing: select `id`, `product_id`, `price`, `begin_time`, `end_time`, `quantity`, `max_quantity`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified` from goods_onsale where `product_id` = ? and `begin_time` <= NOW() and `end_time` > NOW()
+2024-11-18 10:36:56.561 [http-nio-8080-exec-3] DEBUG c.e.x.j.p.m.m.P.selectLastOnSaleByProductId - ====> Parameters: 1553(Long)
+2024-11-18 10:36:56.567 [http-nio-8080-exec-3] DEBUG c.e.x.j.p.m.m.P.selectLastOnSaleByProductId - <====      Total: 1
+2024-11-18 10:36:56.567 [http-nio-8080-exec-3] DEBUG c.e.x.j.p.m.m.ProductAllMapper.selectOtherProduct - ====>  Preparing: select `id`, `goods_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified` from goods_product where `goods_id` = ?
+2024-11-18 10:36:56.568 [http-nio-8080-exec-3] DEBUG c.e.x.j.p.m.m.ProductAllMapper.selectOtherProduct - ====> Parameters: 12(Long)
+2024-11-18 10:36:56.583 [http-nio-8080-exec-3] DEBUG c.e.x.j.p.m.m.ProductAllMapper.selectOtherProduct - <====      Total: 15
+2024-11-18 10:36:56.583 [http-nio-8080-exec-3] DEBUG c.e.x.j.p.m.m.ProductAllMapper.getProductWithAll - <==      Total: 1
+2024-11-18 10:36:59.032 [http-nio-8080-exec-4] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:36:59.034 [http-nio-8080-exec-4] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById_Jpa: id = 1553, all = true
+2024-11-18 10:36:59.035 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        ppe1_0.id,
+        ppe1_0.barcode,
+        ppe1_0.category_id,
+        ppe1_0.commission_ratio,
+        ppe1_0.creator_id,
+        ppe1_0.creator_name,
+        ppe1_0.free_threshold,
+        ppe1_0.gmt_create,
+        ppe1_0.gmt_modified,
+        ppe1_0.goods_id,
+        ppe1_0.modifier_id,
+        ppe1_0.modifier_name,
+        ppe1_0.name,
+        ppe1_0.origin_place,
+        ppe1_0.original_price,
+        ppe1_0.shop_id,
+        ppe1_0.shop_logistic_id,
+        ppe1_0.sku_sn,
+        ppe1_0.status,
+        ppe1_0.template_id,
+        ppe1_0.unit,
+        ppe1_0.weight 
+    from
+        goods_product ppe1_0 
+    where
+        ppe1_0.id=?
+2024-11-18 10:36:59.040 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        ospe1_0.id,
+        ospe1_0.begin_time,
+        ospe1_0.creator_id,
+        ospe1_0.creator_name,
+        ospe1_0.end_time,
+        ospe1_0.gmt_create,
+        ospe1_0.gmt_modified,
+        ospe1_0.invalid,
+        ospe1_0.max_quantity,
+        ospe1_0.modifier_id,
+        ospe1_0.modifier_name,
+        ospe1_0.price,
+        ospe1_0.product_id,
+        ospe1_0.quantity,
+        ospe1_0.shop_id,
+        ospe1_0.type 
+    from
+        goods_onsale ospe1_0 
+    where
+        ospe1_0.product_id=? 
+        and ospe1_0.begin_time<=? 
+        and ospe1_0.end_time>=? 
+    order by
+        ospe1_0.end_time desc
+2024-11-18 10:36:59.048 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        ppe1_0.id,
+        ppe1_0.barcode,
+        ppe1_0.category_id,
+        ppe1_0.commission_ratio,
+        ppe1_0.creator_id,
+        ppe1_0.creator_name,
+        ppe1_0.free_threshold,
+        ppe1_0.gmt_create,
+        ppe1_0.gmt_modified,
+        ppe1_0.goods_id,
+        ppe1_0.modifier_id,
+        ppe1_0.modifier_name,
+        ppe1_0.name,
+        ppe1_0.origin_place,
+        ppe1_0.original_price,
+        ppe1_0.shop_id,
+        ppe1_0.shop_logistic_id,
+        ppe1_0.sku_sn,
+        ppe1_0.status,
+        ppe1_0.template_id,
+        ppe1_0.unit,
+        ppe1_0.weight 
+    from
+        goods_product ppe1_0 
+    where
+        ppe1_0.goods_id=? 
+        and ppe1_0.id<>?
+2024-11-18 10:37:06.029 [http-nio-8080-exec-5] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:37:06.034 [http-nio-8080-exec-5] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById_Jpa: id = 1553, all = true
+2024-11-18 10:37:06.036 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        ppe1_0.id,
+        ppe1_0.barcode,
+        ppe1_0.category_id,
+        ppe1_0.commission_ratio,
+        ppe1_0.creator_id,
+        ppe1_0.creator_name,
+        ppe1_0.free_threshold,
+        ppe1_0.gmt_create,
+        ppe1_0.gmt_modified,
+        ppe1_0.goods_id,
+        ppe1_0.modifier_id,
+        ppe1_0.modifier_name,
+        ppe1_0.name,
+        ppe1_0.origin_place,
+        ppe1_0.original_price,
+        ppe1_0.shop_id,
+        ppe1_0.shop_logistic_id,
+        ppe1_0.sku_sn,
+        ppe1_0.status,
+        ppe1_0.template_id,
+        ppe1_0.unit,
+        ppe1_0.weight 
+    from
+        goods_product ppe1_0 
+    where
+        ppe1_0.id=?
+2024-11-18 10:37:06.044 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        ospe1_0.id,
+        ospe1_0.begin_time,
+        ospe1_0.creator_id,
+        ospe1_0.creator_name,
+        ospe1_0.end_time,
+        ospe1_0.gmt_create,
+        ospe1_0.gmt_modified,
+        ospe1_0.invalid,
+        ospe1_0.max_quantity,
+        ospe1_0.modifier_id,
+        ospe1_0.modifier_name,
+        ospe1_0.price,
+        ospe1_0.product_id,
+        ospe1_0.quantity,
+        ospe1_0.shop_id,
+        ospe1_0.type 
+    from
+        goods_onsale ospe1_0 
+    where
+        ospe1_0.product_id=? 
+        and ospe1_0.begin_time<=? 
+        and ospe1_0.end_time>=? 
+    order by
+        ospe1_0.end_time desc
+2024-11-18 10:37:06.054 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        ppe1_0.id,
+        ppe1_0.barcode,
+        ppe1_0.category_id,
+        ppe1_0.commission_ratio,
+        ppe1_0.creator_id,
+        ppe1_0.creator_name,
+        ppe1_0.free_threshold,
+        ppe1_0.gmt_create,
+        ppe1_0.gmt_modified,
+        ppe1_0.goods_id,
+        ppe1_0.modifier_id,
+        ppe1_0.modifier_name,
+        ppe1_0.name,
+        ppe1_0.origin_place,
+        ppe1_0.original_price,
+        ppe1_0.shop_id,
+        ppe1_0.shop_logistic_id,
+        ppe1_0.sku_sn,
+        ppe1_0.status,
+        ppe1_0.template_id,
+        ppe1_0.unit,
+        ppe1_0.weight 
+    from
+        goods_product ppe1_0 
+    where
+        ppe1_0.goods_id=? 
+        and ppe1_0.id<>?
+2024-11-18 10:37:17.677 [http-nio-8080-exec-6] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:37:17.689 [http-nio-8080-exec-6] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById_Jpa: id = 1553, all = true
+2024-11-18 10:37:17.692 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        ppe1_0.id,
+        ppe1_0.barcode,
+        ppe1_0.category_id,
+        ppe1_0.commission_ratio,
+        ppe1_0.creator_id,
+        ppe1_0.creator_name,
+        ppe1_0.free_threshold,
+        ppe1_0.gmt_create,
+        ppe1_0.gmt_modified,
+        ppe1_0.goods_id,
+        ppe1_0.modifier_id,
+        ppe1_0.modifier_name,
+        ppe1_0.name,
+        ppe1_0.origin_place,
+        ppe1_0.original_price,
+        ppe1_0.shop_id,
+        ppe1_0.shop_logistic_id,
+        ppe1_0.sku_sn,
+        ppe1_0.status,
+        ppe1_0.template_id,
+        ppe1_0.unit,
+        ppe1_0.weight 
+    from
+        goods_product ppe1_0 
+    where
+        ppe1_0.id=?
+2024-11-18 10:37:17.706 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        ospe1_0.id,
+        ospe1_0.begin_time,
+        ospe1_0.creator_id,
+        ospe1_0.creator_name,
+        ospe1_0.end_time,
+        ospe1_0.gmt_create,
+        ospe1_0.gmt_modified,
+        ospe1_0.invalid,
+        ospe1_0.max_quantity,
+        ospe1_0.modifier_id,
+        ospe1_0.modifier_name,
+        ospe1_0.price,
+        ospe1_0.product_id,
+        ospe1_0.quantity,
+        ospe1_0.shop_id,
+        ospe1_0.type 
+    from
+        goods_onsale ospe1_0 
+    where
+        ospe1_0.product_id=? 
+        and ospe1_0.begin_time<=? 
+        and ospe1_0.end_time>=? 
+    order by
+        ospe1_0.end_time desc
+2024-11-18 10:37:17.721 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        ppe1_0.id,
+        ppe1_0.barcode,
+        ppe1_0.category_id,
+        ppe1_0.commission_ratio,
+        ppe1_0.creator_id,
+        ppe1_0.creator_name,
+        ppe1_0.free_threshold,
+        ppe1_0.gmt_create,
+        ppe1_0.gmt_modified,
+        ppe1_0.goods_id,
+        ppe1_0.modifier_id,
+        ppe1_0.modifier_name,
+        ppe1_0.name,
+        ppe1_0.origin_place,
+        ppe1_0.original_price,
+        ppe1_0.shop_id,
+        ppe1_0.shop_logistic_id,
+        ppe1_0.sku_sn,
+        ppe1_0.status,
+        ppe1_0.template_id,
+        ppe1_0.unit,
+        ppe1_0.weight 
+    from
+        goods_product ppe1_0 
+    where
+        ppe1_0.goods_id=? 
+        and ppe1_0.id<>?
+2024-11-18 10:37:38.344 [http-nio-8080-exec-7] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:37:38.348 [http-nio-8080-exec-7] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById_Jpa: id = 1553, all = true
+2024-11-18 10:37:38.354 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        ppe1_0.id,
+        ppe1_0.barcode,
+        ppe1_0.category_id,
+        ppe1_0.commission_ratio,
+        ppe1_0.creator_id,
+        ppe1_0.creator_name,
+        ppe1_0.free_threshold,
+        ppe1_0.gmt_create,
+        ppe1_0.gmt_modified,
+        ppe1_0.goods_id,
+        ppe1_0.modifier_id,
+        ppe1_0.modifier_name,
+        ppe1_0.name,
+        ppe1_0.origin_place,
+        ppe1_0.original_price,
+        ppe1_0.shop_id,
+        ppe1_0.shop_logistic_id,
+        ppe1_0.sku_sn,
+        ppe1_0.status,
+        ppe1_0.template_id,
+        ppe1_0.unit,
+        ppe1_0.weight 
+    from
+        goods_product ppe1_0 
+    where
+        ppe1_0.id=?
+2024-11-18 10:37:38.367 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        ospe1_0.id,
+        ospe1_0.begin_time,
+        ospe1_0.creator_id,
+        ospe1_0.creator_name,
+        ospe1_0.end_time,
+        ospe1_0.gmt_create,
+        ospe1_0.gmt_modified,
+        ospe1_0.invalid,
+        ospe1_0.max_quantity,
+        ospe1_0.modifier_id,
+        ospe1_0.modifier_name,
+        ospe1_0.price,
+        ospe1_0.product_id,
+        ospe1_0.quantity,
+        ospe1_0.shop_id,
+        ospe1_0.type 
+    from
+        goods_onsale ospe1_0 
+    where
+        ospe1_0.product_id=? 
+        and ospe1_0.begin_time<=? 
+        and ospe1_0.end_time>=? 
+    order by
+        ospe1_0.end_time desc
+2024-11-18 10:37:38.375 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        ppe1_0.id,
+        ppe1_0.barcode,
+        ppe1_0.category_id,
+        ppe1_0.commission_ratio,
+        ppe1_0.creator_id,
+        ppe1_0.creator_name,
+        ppe1_0.free_threshold,
+        ppe1_0.gmt_create,
+        ppe1_0.gmt_modified,
+        ppe1_0.goods_id,
+        ppe1_0.modifier_id,
+        ppe1_0.modifier_name,
+        ppe1_0.name,
+        ppe1_0.origin_place,
+        ppe1_0.original_price,
+        ppe1_0.shop_id,
+        ppe1_0.shop_logistic_id,
+        ppe1_0.sku_sn,
+        ppe1_0.status,
+        ppe1_0.template_id,
+        ppe1_0.unit,
+        ppe1_0.weight 
+    from
+        goods_product ppe1_0 
+    where
+        ppe1_0.goods_id=? 
+        and ppe1_0.id<>?
+2024-11-18 10:38:15.589 [http-nio-8080-exec-9] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:38:15.594 [http-nio-8080-exec-9] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById_manual: id = 1553
+2024-11-18 10:38:15.599 [http-nio-8080-exec-9] DEBUG c.e.x.j.p.m.m.ProductAllMapper.getProductWithAll - ==>  Preparing: SELECT `id`, `shop_id`, `goods_id`, `category_id`, `template_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified`, `status`, `commission_ratio`, `shop_logistic_id`, `free_threshold` FROM goods_product WHERE ((`id` = ?))
+2024-11-18 10:38:15.601 [http-nio-8080-exec-9] DEBUG c.e.x.j.p.m.m.ProductAllMapper.getProductWithAll - ==> Parameters: 1553(Long)
+2024-11-18 10:38:15.604 [http-nio-8080-exec-9] DEBUG c.e.x.j.p.m.m.P.selectLastOnSaleByProductId - ====>  Preparing: select `id`, `product_id`, `price`, `begin_time`, `end_time`, `quantity`, `max_quantity`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified` from goods_onsale where `product_id` = ? and `begin_time` <= NOW() and `end_time` > NOW()
+2024-11-18 10:38:15.605 [http-nio-8080-exec-9] DEBUG c.e.x.j.p.m.m.P.selectLastOnSaleByProductId - ====> Parameters: 1553(Long)
+2024-11-18 10:38:15.613 [http-nio-8080-exec-9] DEBUG c.e.x.j.p.m.m.P.selectLastOnSaleByProductId - <====      Total: 1
+2024-11-18 10:38:15.614 [http-nio-8080-exec-9] DEBUG c.e.x.j.p.m.m.ProductAllMapper.selectOtherProduct - ====>  Preparing: select `id`, `goods_id`, `sku_sn`, `name`, `original_price`, `weight`, `barcode`, `unit`, `origin_place`, `creator_id`, `creator_name`, `modifier_id`, `modifier_name`, `gmt_create`, `gmt_modified` from goods_product where `goods_id` = ?
+2024-11-18 10:38:15.614 [http-nio-8080-exec-9] DEBUG c.e.x.j.p.m.m.ProductAllMapper.selectOtherProduct - ====> Parameters: 12(Long)
+2024-11-18 10:38:15.627 [http-nio-8080-exec-9] DEBUG c.e.x.j.p.m.m.ProductAllMapper.selectOtherProduct - <====      Total: 15
+2024-11-18 10:38:15.627 [http-nio-8080-exec-9] DEBUG c.e.x.j.p.m.m.ProductAllMapper.getProductWithAll - <==      Total: 1
+2024-11-18 10:38:54.371 [http-nio-8080-exec-11] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:38:54.376 [http-nio-8080-exec-11] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById_Jpa: id = 1553, all = true
+2024-11-18 10:38:54.379 [http-nio-8080-exec-11] DEBUG org.hibernate.SQL - 
+    select
+        ppe1_0.id,
+        ppe1_0.barcode,
+        ppe1_0.category_id,
+        ppe1_0.commission_ratio,
+        ppe1_0.creator_id,
+        ppe1_0.creator_name,
+        ppe1_0.free_threshold,
+        ppe1_0.gmt_create,
+        ppe1_0.gmt_modified,
+        ppe1_0.goods_id,
+        ppe1_0.modifier_id,
+        ppe1_0.modifier_name,
+        ppe1_0.name,
+        ppe1_0.origin_place,
+        ppe1_0.original_price,
+        ppe1_0.shop_id,
+        ppe1_0.shop_logistic_id,
+        ppe1_0.sku_sn,
+        ppe1_0.status,
+        ppe1_0.template_id,
+        ppe1_0.unit,
+        ppe1_0.weight 
+    from
+        goods_product ppe1_0 
+    where
+        ppe1_0.id=?
+2024-11-18 10:38:54.390 [http-nio-8080-exec-11] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        ospe1_0.id,
+        ospe1_0.begin_time,
+        ospe1_0.creator_id,
+        ospe1_0.creator_name,
+        ospe1_0.end_time,
+        ospe1_0.gmt_create,
+        ospe1_0.gmt_modified,
+        ospe1_0.invalid,
+        ospe1_0.max_quantity,
+        ospe1_0.modifier_id,
+        ospe1_0.modifier_name,
+        ospe1_0.price,
+        ospe1_0.product_id,
+        ospe1_0.quantity,
+        ospe1_0.shop_id,
+        ospe1_0.type 
+    from
+        goods_onsale ospe1_0 
+    where
+        ospe1_0.product_id=? 
+        and ospe1_0.begin_time<=? 
+        and ospe1_0.end_time>=? 
+    order by
+        ospe1_0.end_time desc
+2024-11-18 10:38:54.400 [http-nio-8080-exec-11] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        ppe1_0.id,
+        ppe1_0.barcode,
+        ppe1_0.category_id,
+        ppe1_0.commission_ratio,
+        ppe1_0.creator_id,
+        ppe1_0.creator_name,
+        ppe1_0.free_threshold,
+        ppe1_0.gmt_create,
+        ppe1_0.gmt_modified,
+        ppe1_0.goods_id,
+        ppe1_0.modifier_id,
+        ppe1_0.modifier_name,
+        ppe1_0.name,
+        ppe1_0.origin_place,
+        ppe1_0.original_price,
+        ppe1_0.shop_id,
+        ppe1_0.shop_logistic_id,
+        ppe1_0.sku_sn,
+        ppe1_0.status,
+        ppe1_0.template_id,
+        ppe1_0.unit,
+        ppe1_0.weight 
+    from
+        goods_product ppe1_0 
+    where
+        ppe1_0.goods_id=? 
+        and ppe1_0.id<>?
+2024-11-18 10:38:55.259 [http-nio-8080-exec-12] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:38:55.260 [http-nio-8080-exec-12] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById_join: id = 1553
+2024-11-18 10:38:55.262 [http-nio-8080-exec-12] DEBUG c.e.x.j.p.m.j.P.getProductWithJoinById - ==>  Preparing: SELECT gp.id, gp.sku_sn, gp.name, gp.original_price, gp.weight, gp.barcode, gp.unit, gp.origin_place, gp.commission_ratio, gp.free_threshold, gp.status, gp.creator_id, gp.creator_name, gp.modifier_id, gp.modifier_name, gp.gmt_create, gp.gmt_modified, go.id AS onsale_id, go.product_id, go.price, go.begin_time, go.end_time, go.quantity, go.max_quantity, go.creator_id AS onsale_creator_id, go.creator_name AS onsale_creator_name, go.modifier_id AS onsale_modifier_id, go.modifier_name AS onsale_modifier_name, go.gmt_create AS onsale_gmt_create, go.gmt_modified AS onsale_gmt_modified, gp2.id AS other_id, gp2.goods_id, gp2.sku_sn AS other_sku_sn, gp2.name AS other_name, gp2.original_price AS other_original_price, gp2.weight AS other_weight, gp2.barcode AS other_barcode, gp2.unit AS other_unit, gp2.origin_place AS other_origin_place, gp2.creator_id AS other_creator_id, gp2.creator_name AS other_creator_name, gp2.modifier_id AS other_modifier_id, gp2.modifier_name AS other_modifier_name, gp2.gmt_create AS other_gmt_create, gp2.gmt_modified AS other_gmt_modified FROM goods_product gp JOIN goods_onsale go ON gp.id = go.product_id AND go.begin_time <= NOW() AND go.end_time > NOW() JOIN goods_product gp2 ON gp.goods_id = gp2.goods_id WHERE gp.id = ?
+2024-11-18 10:38:55.262 [http-nio-8080-exec-12] DEBUG c.e.x.j.p.m.j.P.getProductWithJoinById - ==> Parameters: 1553(Long)
+2024-11-18 10:38:55.294 [http-nio-8080-exec-12] DEBUG c.e.x.j.p.m.j.P.getProductWithJoinById - <==      Total: 15
+2024-11-18 10:39:08.754 [http-nio-8080-exec-13] DEBUG c.e.x.j.p.controller.ProductController - getProductById: id = 1553 
+2024-11-18 10:39:08.760 [http-nio-8080-exec-13] DEBUG c.e.x.javaee.productdemoaop.service.ProductService - findProductById_join: id = 1553
+2024-11-18 10:39:08.762 [http-nio-8080-exec-13] DEBUG c.e.x.j.p.m.j.P.getProductWithJoinById - ==>  Preparing: SELECT gp.id, gp.sku_sn, gp.name, gp.original_price, gp.weight, gp.barcode, gp.unit, gp.origin_place, gp.commission_ratio, gp.free_threshold, gp.status, gp.creator_id, gp.creator_name, gp.modifier_id, gp.modifier_name, gp.gmt_create, gp.gmt_modified, go.id AS onsale_id, go.product_id, go.price, go.begin_time, go.end_time, go.quantity, go.max_quantity, go.creator_id AS onsale_creator_id, go.creator_name AS onsale_creator_name, go.modifier_id AS onsale_modifier_id, go.modifier_name AS onsale_modifier_name, go.gmt_create AS onsale_gmt_create, go.gmt_modified AS onsale_gmt_modified, gp2.id AS other_id, gp2.goods_id, gp2.sku_sn AS other_sku_sn, gp2.name AS other_name, gp2.original_price AS other_original_price, gp2.weight AS other_weight, gp2.barcode AS other_barcode, gp2.unit AS other_unit, gp2.origin_place AS other_origin_place, gp2.creator_id AS other_creator_id, gp2.creator_name AS other_creator_name, gp2.modifier_id AS other_modifier_id, gp2.modifier_name AS other_modifier_name, gp2.gmt_create AS other_gmt_create, gp2.gmt_modified AS other_gmt_modified FROM goods_product gp JOIN goods_onsale go ON gp.id = go.product_id AND go.begin_time <= NOW() AND go.end_time > NOW() JOIN goods_product gp2 ON gp.goods_id = gp2.goods_id WHERE gp.id = ?
+2024-11-18 10:39:08.763 [http-nio-8080-exec-13] DEBUG c.e.x.j.p.m.j.P.getProductWithJoinById - ==> Parameters: 1553(Long)
+2024-11-18 10:39:08.788 [http-nio-8080-exec-13] DEBUG c.e.x.j.p.m.j.P.getProductWithJoinById - <==      Total: 15
+2024-11-18 10:40:10.334 [SpringApplicationShutdownHook] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-18 10:40:10.340 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2024-11-18 10:40:10.348 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
