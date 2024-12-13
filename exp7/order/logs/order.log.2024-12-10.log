@@ -1,0 +1,1038 @@
+2024-12-10 17:04:18.657 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-10 17:04:18.681 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Starting OrderApplication using Java 17.0.12 with PID 29198 (/Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order/target/classes started by llmons in /Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order)
+2024-12-10 17:04:18.681 [main] DEBUG cn.edu.xmu.javaee.order.OrderApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-10 17:04:18.682 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-10 17:04:19.211 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-10 17:04:19.233 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 1 MongoDB repository interface.
+2024-12-10 17:04:19.660 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-10 17:04:19.667 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-10 17:04:19.670 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-10 17:04:19.671 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-12-10 17:04:19.725 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-10 17:04:19.725 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1000 ms
+2024-12-10 17:04:19.902 [main] INFO  org.mongodb.driver.cluster - Adding discovered server 113.44.129.214:27017 to client view of cluster
+2024-12-10 17:04:19.920 [main] INFO  org.mongodb.driver.cluster - Adding discovered server 113.44.145.243:27018 to client view of cluster
+2024-12-10 17:04:19.921 [main] INFO  org.mongodb.driver.cluster - Adding discovered server 123.249.93.208:27019 to client view of cluster
+2024-12-10 17:04:19.930 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "5.0.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "15.1.1"}, "platform": "Java/JetBrains s.r.o./17.0.12+1-b1087.25"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@5ad6f98e, com.mongodb.Jep395RecordCodecProvider@586728e8, com.mongodb.KotlinCodecProvider@3316527e]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[113.44.129.214:27017, 113.44.145.243:27018, 123.249.93.208:27019], srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='rs0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-12-10 17:04:20.189 [main] DEBUG cn.edu.xmu.javaee.order.config.OrderConfig - snowFlakeIdWorker: ip = 127.0.0.1
+2024-12-10 17:04:20.624 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2024-12-10 17:04:20.654 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-10 17:04:20.662 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-10 17:04:20.670 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Started OrderApplication in 2.201 seconds (process running for 2.507)
+2024-12-10 17:04:24.951 [cluster-ClusterId{value='67580413065f9c6db0b8a376', description='null'}-113.44.129.214:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 113.44.129.214:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:707)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:583)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:428)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:354)
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:92)
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:48)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:203)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:176)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:196)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:716)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:580)
+	... 10 common frames omitted
+2024-12-10 17:04:24.951 [cluster-ClusterId{value='67580413065f9c6db0b8a376', description='null'}-123.249.93.208:27019] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 123.249.93.208:27019
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:707)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:583)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:428)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:354)
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:92)
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:48)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:203)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:176)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:196)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:716)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:580)
+	... 10 common frames omitted
+2024-12-10 17:04:24.951 [cluster-ClusterId{value='67580413065f9c6db0b8a376', description='null'}-113.44.145.243:27018] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 113.44.145.243:27018
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:707)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:583)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:428)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:354)
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:92)
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:48)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:203)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:176)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:196)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:716)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:580)
+	... 10 common frames omitted
+2024-12-10 17:05:10.137 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-10 17:05:10.138 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-10 17:05:10.144 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2024-12-10 17:05:18.092 [http-nio-8080-exec-5] INFO  org.mongodb.driver.cluster - Waiting for server to become available for operation with ID 25. Remaining time: 30000 ms. Selector: ReadPreferenceServerSelector{readPreference=primary}, topology description: {type=REPLICA_SET, servers=[{address=113.44.129.214:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}, {address=113.44.145.243:27018, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}, {address=123.249.93.208:27019, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}].
+2024-12-10 17:05:36.114 [http-nio-8080-exec-6] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-12-10 17:05:48.123 [http-nio-8080-exec-5] ERROR cn.edu.xmu.javaee.core.aop.DaoAspect - doAround: obj = cn.edu.xmu.javaee.order.dao.OrderDao@5c7b8c12, method = findById, e = {}
+org.springframework.dao.DataAccessResourceFailureException: Timed out while waiting for a server that matches ReadPreferenceServerSelector{readPreference=primary}. Client view of cluster state is {type=REPLICA_SET, servers=[{address=113.44.129.214:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}, {address=113.44.145.243:27018, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}, {address=123.249.93.208:27019, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}]
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:88)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:3008)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindOneInternal(MongoTemplate.java:2891)
+	at org.springframework.data.mongodb.core.MongoTemplate.doFindOne(MongoTemplate.java:2546)
+	at org.springframework.data.mongodb.core.MongoTemplate.findOne(MongoTemplate.java:819)
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.findById(SimpleMongoRepository.java:127)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:173)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:148)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.mongodb.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:158)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy109.findById(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy109.findById(Unknown Source)
+	at cn.edu.xmu.javaee.order.dao.OrderDao.findById(OrderDao.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
+	at cn.edu.xmu.javaee.core.aop.DaoAspect.doAround(DaoAspect.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at cn.edu.xmu.javaee.order.dao.OrderDao$$SpringCGLIB$$0.findById(<generated>)
+	at cn.edu.xmu.javaee.order.service.OrderService.findOrder(OrderService.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at cn.edu.xmu.javaee.order.service.OrderService$$SpringCGLIB$$0.findOrder(<generated>)
+	at cn.edu.xmu.javaee.order.controller.CustomerController.getOrders(CustomerController.java:49)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:102)
+	at cn.edu.xmu.javaee.core.aop.ControllerAspect.doAround(ControllerAspect.java:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:637)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at cn.edu.xmu.javaee.order.controller.CustomerController$$SpringCGLIB$$0.getOrders(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: com.mongodb.MongoTimeoutException: Timed out while waiting for a server that matches ReadPreferenceServerSelector{readPreference=primary}. Client view of cluster state is {type=REPLICA_SET, servers=[{address=113.44.129.214:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}, {address=113.44.145.243:27018, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}, {address=123.249.93.208:27019, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketReadException: Exception receiving message}, caused by {java.net.SocketException: Connection reset}}]
+	at com.mongodb.internal.connection.BaseCluster.createAndLogTimeoutException(BaseCluster.java:392)
+	at com.mongodb.internal.connection.BaseCluster.selectServer(BaseCluster.java:148)
+	at com.mongodb.internal.connection.AbstractMultiServerCluster.selectServer(AbstractMultiServerCluster.java:54)
+	at com.mongodb.internal.binding.ClusterBinding.getReadConnectionSource(ClusterBinding.java:108)
+	at com.mongodb.client.internal.ClientSessionBinding.getConnectionSource(ClientSessionBinding.java:128)
+	at com.mongodb.client.internal.ClientSessionBinding.getReadConnectionSource(ClientSessionBinding.java:92)
+	at com.mongodb.internal.operation.SyncOperationHelper.withSuppliedResource(SyncOperationHelper.java:141)
+	at com.mongodb.internal.operation.SyncOperationHelper.withSourceAndConnection(SyncOperationHelper.java:122)
+	at com.mongodb.internal.operation.FindOperation.lambda$execute$2(FindOperation.java:310)
+	at com.mongodb.internal.operation.SyncOperationHelper.lambda$decorateReadWithRetries$12(SyncOperationHelper.java:289)
+	at com.mongodb.internal.async.function.RetryingSyncSupplier.get(RetryingSyncSupplier.java:67)
+	at com.mongodb.internal.operation.FindOperation.execute(FindOperation.java:321)
+	at com.mongodb.internal.operation.FindOperation.execute(FindOperation.java:71)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:153)
+	at com.mongodb.client.internal.FindIterableImpl.first(FindIterableImpl.java:206)
+	at org.springframework.data.mongodb.core.MongoTemplate$FindOneCallback.doInCollection(MongoTemplate.java:3048)
+	at org.springframework.data.mongodb.core.MongoTemplate$FindOneCallback.doInCollection(MongoTemplate.java:3022)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeFindOneInternal(MongoTemplate.java:2888)
+	... 158 common frames omitted
+2024-12-10 17:05:48.128 [http-nio-8080-exec-5] INFO  cn.edu.xmu.javaee.core.aop.ControllerAspect - doAround: BusinessException， errno = INTERNAL_SERVER_ERR
+2024-12-10 17:09:49.076 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-10 17:09:49.092 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Starting OrderApplication using Java 17.0.12 with PID 29417 (/Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order/target/classes started by llmons in /Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order)
+2024-12-10 17:09:49.092 [main] DEBUG cn.edu.xmu.javaee.order.OrderApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-10 17:09:49.092 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-10 17:09:49.475 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-10 17:09:49.494 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 1 MongoDB repository interface.
+2024-12-10 17:09:49.823 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-10 17:09:49.829 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-10 17:09:49.831 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-10 17:09:49.831 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-12-10 17:09:49.863 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-10 17:09:49.864 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 747 ms
+2024-12-10 17:09:49.995 [main] INFO  org.mongodb.driver.cluster - Adding discovered server 113.44.129.214:27017 to client view of cluster
+2024-12-10 17:09:50.009 [main] INFO  org.mongodb.driver.cluster - Adding discovered server 113.44.145.243:27018 to client view of cluster
+2024-12-10 17:09:50.010 [main] INFO  org.mongodb.driver.cluster - Adding discovered server 123.249.93.208:27019 to client view of cluster
+2024-12-10 17:09:50.018 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "5.0.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "15.1.1"}, "platform": "Java/JetBrains s.r.o./17.0.12+1-b1087.25"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6cbdd1c5, com.mongodb.Jep395RecordCodecProvider@60816371, com.mongodb.KotlinCodecProvider@678586f0]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[113.44.129.214:27017, 113.44.145.243:27018, 123.249.93.208:27019], srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='rs0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-12-10 17:09:50.162 [cluster-ClusterId{value='6758055d8f0a2c1e7d3ae337', description='null'}-123.249.93.208:27019] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=123.249.93.208:27019, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=136652708, setName='rs0', canonicalAddress=mongo3:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=67550877d33c2ea9b1182abd, counter=5}, lastWriteDate=Tue Dec 10 17:09:44 CST 2024, lastUpdateTimeNanos=320462398250791}
+2024-12-10 17:09:50.162 [cluster-ClusterId{value='6758055d8f0a2c1e7d3ae337', description='null'}-113.44.129.214:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=113.44.129.214:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=136878042, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 17:09:44 CST 2024, lastUpdateTimeNanos=320462398282208}
+2024-12-10 17:09:50.163 [cluster-ClusterId{value='6758055d8f0a2c1e7d3ae337', description='null'}-123.249.93.208:27019] INFO  org.mongodb.driver.cluster - Adding discovered server mongo3:27017 to client view of cluster
+2024-12-10 17:09:50.164 [cluster-ClusterId{value='6758055d8f0a2c1e7d3ae337', description='null'}-123.249.93.208:27019] INFO  org.mongodb.driver.cluster - Adding discovered server mongo2:27017 to client view of cluster
+2024-12-10 17:09:50.165 [cluster-ClusterId{value='6758055d8f0a2c1e7d3ae337', description='null'}-123.249.93.208:27019] INFO  org.mongodb.driver.cluster - Adding discovered server mongo1:27017 to client view of cluster
+2024-12-10 17:09:50.166 [cluster-ClusterId{value='6758055d8f0a2c1e7d3ae337', description='null'}-123.249.93.208:27019] INFO  org.mongodb.driver.cluster - Canonical address mongo3:27017 does not match server address.  Removing 123.249.93.208:27019 from client view of cluster
+2024-12-10 17:09:50.168 [cluster-ClusterId{value='6758055d8f0a2c1e7d3ae337', description='null'}-113.44.129.214:27017] INFO  org.mongodb.driver.cluster - Server 113.44.129.214:27017 is no longer a member of the replica set.  Removing from client view of cluster.
+2024-12-10 17:09:50.168 [cluster-ClusterId{value='6758055d8f0a2c1e7d3ae337', description='null'}-113.44.129.214:27017] INFO  org.mongodb.driver.cluster - Server 113.44.145.243:27018 is no longer a member of the replica set.  Removing from client view of cluster.
+2024-12-10 17:09:50.168 [cluster-ClusterId{value='6758055d8f0a2c1e7d3ae337', description='null'}-113.44.129.214:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary 113.44.129.214:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:09:50.252 [main] DEBUG cn.edu.xmu.javaee.order.config.OrderConfig - snowFlakeIdWorker: ip = 127.0.0.1
+2024-12-10 17:09:50.321 [cluster-ClusterId{value='6758055d8f0a2c1e7d3ae337', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server mongo1:27017
+com.mongodb.MongoSocketException: mongo1
+	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:75)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:101)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:80)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:201)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.UnknownHostException: mongo1
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:887)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at com.mongodb.internal.connection.DefaultInetAddressResolver.lookupByName(DefaultInetAddressResolver.java:34)
+	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:71)
+	... 6 common frames omitted
+2024-12-10 17:09:50.348 [cluster-ClusterId{value='6758055d8f0a2c1e7d3ae337', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server mongo3:27017
+com.mongodb.MongoSocketException: mongo3: nodename nor servname provided, or not known
+	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:75)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:101)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:80)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:201)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.UnknownHostException: mongo3: nodename nor servname provided, or not known
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:934)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at com.mongodb.internal.connection.DefaultInetAddressResolver.lookupByName(DefaultInetAddressResolver.java:34)
+	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:71)
+	... 6 common frames omitted
+2024-12-10 17:09:50.385 [cluster-ClusterId{value='6758055d8f0a2c1e7d3ae337', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server mongo2:27017
+com.mongodb.MongoSocketException: mongo2: nodename nor servname provided, or not known
+	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:75)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:101)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:80)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:201)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.UnknownHostException: mongo2: nodename nor servname provided, or not known
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:934)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at com.mongodb.internal.connection.DefaultInetAddressResolver.lookupByName(DefaultInetAddressResolver.java:34)
+	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:71)
+	... 6 common frames omitted
+2024-12-10 17:09:50.684 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2024-12-10 17:09:50.714 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-10 17:09:50.721 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-10 17:09:50.730 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Started OrderApplication in 1.799 seconds (process running for 2.065)
+2024-12-10 17:10:00.357 [cluster-ClusterId{value='6758055d8f0a2c1e7d3ae337', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server mongo3:27017
+com.mongodb.MongoSocketException: mongo3
+	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:75)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:101)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:80)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:201)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.UnknownHostException: mongo3
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:887)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at com.mongodb.internal.connection.DefaultInetAddressResolver.lookupByName(DefaultInetAddressResolver.java:34)
+	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:71)
+	... 6 common frames omitted
+2024-12-10 17:10:10.399 [cluster-ClusterId{value='6758055d8f0a2c1e7d3ae337', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server mongo2:27017
+com.mongodb.MongoSocketException: mongo2
+	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:75)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:101)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:80)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:201)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.UnknownHostException: mongo2
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at com.mongodb.internal.connection.DefaultInetAddressResolver.lookupByName(DefaultInetAddressResolver.java:34)
+	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:71)
+	... 6 common frames omitted
+2024-12-10 17:10:20.342 [cluster-ClusterId{value='6758055d8f0a2c1e7d3ae337', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server mongo1:27017
+com.mongodb.MongoSocketException: mongo1: nodename nor servname provided, or not known
+	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:75)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:101)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:80)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:201)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.UnknownHostException: mongo1: nodename nor servname provided, or not known
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:934)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at com.mongodb.internal.connection.DefaultInetAddressResolver.lookupByName(DefaultInetAddressResolver.java:34)
+	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:71)
+	... 6 common frames omitted
+2024-12-10 17:10:20.369 [cluster-ClusterId{value='6758055d8f0a2c1e7d3ae337', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server mongo3:27017
+com.mongodb.MongoSocketException: mongo3: nodename nor servname provided, or not known
+	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:75)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:101)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:80)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:201)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.UnknownHostException: mongo3: nodename nor servname provided, or not known
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:934)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at com.mongodb.internal.connection.DefaultInetAddressResolver.lookupByName(DefaultInetAddressResolver.java:34)
+	at com.mongodb.internal.connection.ServerAddressHelper.getSocketAddresses(ServerAddressHelper.java:71)
+	... 6 common frames omitted
+2024-12-10 17:24:46.602 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-10 17:24:46.623 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Starting OrderApplication using Java 17.0.12 with PID 29982 (/Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order/target/classes started by llmons in /Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order)
+2024-12-10 17:24:46.623 [main] DEBUG cn.edu.xmu.javaee.order.OrderApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-10 17:24:46.623 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-10 17:24:47.007 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-10 17:24:47.027 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 1 MongoDB repository interface.
+2024-12-10 17:24:47.350 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-10 17:24:47.355 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-10 17:24:47.357 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-10 17:24:47.357 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-12-10 17:24:47.390 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-10 17:24:47.390 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 741 ms
+2024-12-10 17:24:47.520 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo1:27017 to client view of cluster
+2024-12-10 17:24:47.534 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo2:27018 to client view of cluster
+2024-12-10 17:24:47.536 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo3:27019 to client view of cluster
+2024-12-10 17:24:47.544 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "5.0.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "15.1.1"}, "platform": "Java/JetBrains s.r.o./17.0.12+1-b1087.25"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@5dae5a70, com.mongodb.Jep395RecordCodecProvider@7686f701, com.mongodb.KotlinCodecProvider@47c96f2c]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo1:27017, mongo2:27018, mongo3:27019], srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='rs0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-12-10 17:24:47.740 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo2:27018] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo2:27018, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=177025458, setName='rs0', canonicalAddress=mongo2:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=6755081d07d351e08cd2abce, counter=9}, lastWriteDate=Tue Dec 10 17:24:44 CST 2024, lastUpdateTimeNanos=321360006858208}
+2024-12-10 17:24:47.740 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo3:27019] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo3:27019, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=177293542, setName='rs0', canonicalAddress=mongo3:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=67550877d33c2ea9b1182abd, counter=5}, lastWriteDate=Tue Dec 10 17:24:44 CST 2024, lastUpdateTimeNanos=321360006858291}
+2024-12-10 17:24:47.741 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo2:27018] INFO  org.mongodb.driver.cluster - Adding discovered server mongo3:27017 to client view of cluster
+2024-12-10 17:24:47.742 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo2:27018] INFO  org.mongodb.driver.cluster - Adding discovered server mongo2:27017 to client view of cluster
+2024-12-10 17:24:47.743 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo2:27018] INFO  org.mongodb.driver.cluster - Canonical address mongo2:27017 does not match server address.  Removing mongo2:27018 from client view of cluster
+2024-12-10 17:24:47.746 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo3:27019] INFO  org.mongodb.driver.cluster - Canonical address mongo3:27017 does not match server address.  Removing mongo3:27019 from client view of cluster
+2024-12-10 17:24:47.758 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo1:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=195227500, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 17:24:44 CST 2024, lastUpdateTimeNanos=321360024944333}
+2024-12-10 17:24:47.758 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:24:47.782 [main] DEBUG cn.edu.xmu.javaee.order.config.OrderConfig - snowFlakeIdWorker: ip = 127.0.0.1
+2024-12-10 17:24:47.905 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo2:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=160778292, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 17:24:44 CST 2024, lastUpdateTimeNanos=321360172416375}
+2024-12-10 17:24:47.905 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 17:24:47.906 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:24:47.907 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo3:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=162832625, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 17:24:44 CST 2024, lastUpdateTimeNanos=321360174660458}
+2024-12-10 17:24:47.908 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 17:24:47.908 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:24:48.184 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2024-12-10 17:24:48.209 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-10 17:24:48.216 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-10 17:24:48.225 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Started OrderApplication in 1.767 seconds (process running for 2.031)
+2024-12-10 17:24:57.836 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 17:24:57.838 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:24:57.991 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 17:24:57.992 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:24:58.024 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 17:24:58.025 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:25:07.841 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 17:25:07.843 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:25:07.998 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 17:25:07.999 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:25:08.019 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 17:25:08.020 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:25:17.843 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 17:25:17.848 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:25:17.994 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 17:25:17.995 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:25:18.007 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 17:25:18.008 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:25:27.390 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-10 17:25:27.390 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-10 17:25:27.397 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2024-12-10 17:25:27.417 [http-nio-8080-exec-1] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-12-10 17:25:27.888 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 17:25:27.890 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:25:28.006 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 17:25:28.007 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:25:28.021 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 17:25:28.022 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:25:37.857 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 17:25:37.858 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:25:38.003 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 17:25:38.003 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:25:38.016 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 17:25:38.016 [cluster-ClusterId{value='675808df2b6b9d4a8e002e74', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:34:01.426 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-10 17:34:01.442 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Starting OrderApplication using Java 17.0.12 with PID 30063 (/Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order/target/classes started by llmons in /Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order)
+2024-12-10 17:34:01.442 [main] DEBUG cn.edu.xmu.javaee.order.OrderApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-10 17:34:01.442 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-10 17:34:01.820 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-10 17:34:01.840 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 MongoDB repository interface.
+2024-12-10 17:34:02.172 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-10 17:34:02.178 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-10 17:34:02.180 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-10 17:34:02.180 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-12-10 17:34:02.210 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-10 17:34:02.210 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 748 ms
+2024-12-10 17:34:02.338 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo1:27017 to client view of cluster
+2024-12-10 17:34:02.352 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo2:27017 to client view of cluster
+2024-12-10 17:34:02.353 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo3:27017 to client view of cluster
+2024-12-10 17:34:02.362 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "5.0.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "15.1.1"}, "platform": "Java/JetBrains s.r.o./17.0.12+1-b1087.25"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@60816371, com.mongodb.Jep395RecordCodecProvider@678586f0, com.mongodb.KotlinCodecProvider@5ad6f98e]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo1:27017, mongo2:27017, mongo3:27017], srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='rs0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-12-10 17:34:02.536 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo1:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=159386000, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 17:33:54 CST 2024, lastUpdateTimeNanos=321914822153041}
+2024-12-10 17:34:02.537 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:34:02.538 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo3:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=161702459, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 17:33:54 CST 2024, lastUpdateTimeNanos=321914824431583}
+2024-12-10 17:34:02.538 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 17:34:02.539 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo2:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=162837958, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 17:33:54 CST 2024, lastUpdateTimeNanos=321914825524333}
+2024-12-10 17:34:02.540 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:34:02.540 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 17:34:02.541 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:34:02.596 [main] DEBUG cn.edu.xmu.javaee.order.config.OrderConfig - snowFlakeIdWorker: ip = 127.0.0.1
+2024-12-10 17:34:02.999 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2024-12-10 17:34:03.024 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-10 17:34:03.033 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-10 17:34:03.041 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Started OrderApplication in 1.752 seconds (process running for 2.012)
+2024-12-10 17:34:12.620 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 17:34:12.624 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:34:12.625 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 17:34:12.625 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:34:13.261 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-10 17:34:13.261 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-10 17:34:13.269 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2024-12-10 17:34:13.289 [http-nio-8080-exec-1] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-12-10 17:34:22.649 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 17:34:22.652 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:34:22.653 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 17:34:22.653 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:34:22.653 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 17:34:22.654 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:34:32.670 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 17:34:32.672 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:34:32.672 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 17:34:32.673 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:34:32.673 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 17:34:32.673 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:34:42.690 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 17:34:42.690 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:34:42.691 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 17:34:42.691 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:34:42.691 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 17:34:42.691 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:34:52.734 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 17:34:52.736 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:34:52.737 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 17:34:52.738 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:34:52.739 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 17:34:52.739 [cluster-ClusterId{value='67580b0af3d4b67b4dcbe98d', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:41:59.467 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-10 17:41:59.486 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Starting OrderApplication using Java 17.0.12 with PID 30213 (/Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order/target/classes started by llmons in /Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order)
+2024-12-10 17:41:59.486 [main] DEBUG cn.edu.xmu.javaee.order.OrderApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-10 17:41:59.487 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-10 17:41:59.858 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-10 17:41:59.878 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 1 MongoDB repository interface.
+2024-12-10 17:42:00.209 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-10 17:42:00.215 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-10 17:42:00.217 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-10 17:42:00.217 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-12-10 17:42:00.248 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-10 17:42:00.249 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 746 ms
+2024-12-10 17:42:00.379 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo1:27017 to client view of cluster
+2024-12-10 17:42:00.393 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo2:27017 to client view of cluster
+2024-12-10 17:42:00.394 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo3:27017 to client view of cluster
+2024-12-10 17:42:00.403 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "5.0.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "15.1.1"}, "platform": "Java/JetBrains s.r.o./17.0.12+1-b1087.25"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@5a13f1f7, com.mongodb.Jep395RecordCodecProvider@5dae5a70, com.mongodb.KotlinCodecProvider@7686f701]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo1:27017, mongo2:27017, mongo3:27017], srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='rs0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-12-10 17:42:00.636 [main] DEBUG cn.edu.xmu.javaee.order.config.OrderConfig - snowFlakeIdWorker: ip = 127.0.0.1
+2024-12-10 17:42:00.647 [cluster-ClusterId{value='67580ce8e19b7969b15357f5', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo2:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=214271042, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 17:41:54 CST 2024, lastUpdateTimeNanos=322392950168250}
+2024-12-10 17:42:00.647 [cluster-ClusterId{value='67580ce8e19b7969b15357f5', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo3:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=214512250, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 17:41:54 CST 2024, lastUpdateTimeNanos=322392950572750}
+2024-12-10 17:42:00.648 [cluster-ClusterId{value='67580ce8e19b7969b15357f5', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo1:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=214232042, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 17:41:54 GMT+08:00 2024, lastUpdateTimeNanos=322392950155250}
+2024-12-10 17:42:00.648 [cluster-ClusterId{value='67580ce8e19b7969b15357f5', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:42:00.649 [cluster-ClusterId{value='67580ce8e19b7969b15357f5', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 17:42:00.650 [cluster-ClusterId{value='67580ce8e19b7969b15357f5', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:42:00.650 [cluster-ClusterId{value='67580ce8e19b7969b15357f5', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 17:42:00.650 [cluster-ClusterId{value='67580ce8e19b7969b15357f5', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:42:05.827 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-10 17:42:05.847 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Starting OrderApplication using Java 17.0.12 with PID 30226 (/Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order/target/classes started by llmons in /Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order)
+2024-12-10 17:42:05.847 [main] DEBUG cn.edu.xmu.javaee.order.OrderApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-10 17:42:05.847 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-10 17:42:06.218 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-10 17:42:06.238 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 1 MongoDB repository interface.
+2024-12-10 17:42:06.569 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-10 17:42:06.574 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-10 17:42:06.576 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-10 17:42:06.576 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-12-10 17:42:06.602 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-10 17:42:06.603 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 739 ms
+2024-12-10 17:42:06.737 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo1:27017 to client view of cluster
+2024-12-10 17:42:06.752 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo2:27017 to client view of cluster
+2024-12-10 17:42:06.753 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo3:27017 to client view of cluster
+2024-12-10 17:42:06.763 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "5.0.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "15.1.1"}, "platform": "Java/JetBrains s.r.o./17.0.12+1-b1087.25"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@329b331f, com.mongodb.Jep395RecordCodecProvider@640a8f93, com.mongodb.KotlinCodecProvider@6335f04a]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo1:27017, mongo2:27017, mongo3:27017], srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='rs0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-12-10 17:42:06.885 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo3:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=111427000, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 17:42:04 CST 2024, lastUpdateTimeNanos=322399188069291}
+2024-12-10 17:42:06.885 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo2:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=112249125, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 17:42:04 CST 2024, lastUpdateTimeNanos=322399188822791}
+2024-12-10 17:42:06.887 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:42:06.887 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo1:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=113647375, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 17:42:04 CST 2024, lastUpdateTimeNanos=322399190226583}
+2024-12-10 17:42:06.887 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 17:42:06.888 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:42:06.889 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 17:42:06.889 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:42:06.996 [main] DEBUG cn.edu.xmu.javaee.order.config.OrderConfig - snowFlakeIdWorker: ip = 127.0.0.1
+2024-12-10 17:42:07.416 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2024-12-10 17:42:07.446 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-10 17:42:07.454 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-10 17:42:07.463 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Started OrderApplication in 1.768 seconds (process running for 2.027)
+2024-12-10 17:42:16.983 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 17:42:16.984 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:42:16.985 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 17:42:16.985 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:42:16.986 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 17:42:16.986 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:42:26.983 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 17:42:26.984 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:42:26.996 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 17:42:26.997 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:42:26.998 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 17:42:26.998 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:42:37.022 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 17:42:37.024 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:42:37.025 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 17:42:37.025 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:42:37.025 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 17:42:37.026 [cluster-ClusterId{value='67580cee87813878638d2d19', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:43:51.943 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-10 17:43:51.957 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Starting OrderApplication using Java 17.0.12 with PID 30253 (/Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order/target/classes started by llmons in /Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order)
+2024-12-10 17:43:51.957 [main] DEBUG cn.edu.xmu.javaee.order.OrderApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-10 17:43:51.958 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-10 17:43:52.321 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-10 17:43:52.339 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 1 MongoDB repository interface.
+2024-12-10 17:43:52.660 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-10 17:43:52.665 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-10 17:43:52.667 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-10 17:43:52.667 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-12-10 17:43:52.696 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-10 17:43:52.697 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 721 ms
+2024-12-10 17:43:52.824 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo1:27017 to client view of cluster
+2024-12-10 17:43:52.837 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo2:27017 to client view of cluster
+2024-12-10 17:43:52.839 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo3:27017 to client view of cluster
+2024-12-10 17:43:52.846 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "5.0.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "15.1.1"}, "platform": "Java/JetBrains s.r.o./17.0.12+1-b1087.25"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@74ce7fdf, com.mongodb.Jep395RecordCodecProvider@1f26b992, com.mongodb.KotlinCodecProvider@2f60cbf2]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo1:27017, mongo2:27017, mongo3:27017], srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='rs0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-12-10 17:43:52.976 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo1:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=117598083, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 17:43:44 CST 2024, lastUpdateTimeNanos=322505282089333}
+2024-12-10 17:43:52.976 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo3:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=117780875, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 17:43:44 CST 2024, lastUpdateTimeNanos=322505282201500}
+2024-12-10 17:43:52.976 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo2:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=117606333, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 17:43:44 CST 2024, lastUpdateTimeNanos=322505282089416}
+2024-12-10 17:43:52.977 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:43:52.977 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 17:43:52.979 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:43:52.979 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 17:43:52.979 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:43:53.073 [main] DEBUG cn.edu.xmu.javaee.order.config.OrderConfig - snowFlakeIdWorker: ip = 127.0.0.1
+2024-12-10 17:43:53.468 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2024-12-10 17:43:53.493 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-10 17:43:53.500 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-10 17:43:53.509 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Started OrderApplication in 1.703 seconds (process running for 1.962)
+2024-12-10 17:44:02.070 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-10 17:44:02.071 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-10 17:44:02.075 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-12-10 17:44:02.099 [http-nio-8080-exec-1] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-12-10 17:44:03.047 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 17:44:03.048 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:44:03.048 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 17:44:03.049 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:44:03.055 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 17:44:03.056 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:44:13.071 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 17:44:13.074 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:44:13.074 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 17:44:13.075 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:44:13.075 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 17:44:13.075 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:44:23.101 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 17:44:23.103 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:44:23.103 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 17:44:23.104 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:44:23.104 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 17:44:23.104 [cluster-ClusterId{value='67580d588d8f1356aef04bae', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 17:58:46.748 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-10 17:58:46.766 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Starting OrderApplication using Java 17.0.12 with PID 30684 (/Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order/target/classes started by llmons in /Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order)
+2024-12-10 17:58:46.766 [main] DEBUG cn.edu.xmu.javaee.order.OrderApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-10 17:58:46.766 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-10 17:58:47.155 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-10 17:58:47.174 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 1 MongoDB repository interface.
+2024-12-10 17:58:47.533 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-10 17:58:47.538 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-10 17:58:47.540 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-10 17:58:47.540 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-12-10 17:58:47.570 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-10 17:58:47.571 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 787 ms
+2024-12-10 17:58:47.658 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoConfig': Injection of autowired dependencies failed
+2024-12-10 17:58:47.659 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-12-10 17:58:47.669 [main] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-10 17:58:47.679 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoConfig': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:515)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at cn.edu.xmu.javaee.order.OrderApplication.main(OrderApplication.java:11)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.data.mongodb.database' in value "${spring.data.mongodb.database}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:964)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1374)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	... 17 common frames omitted
+2024-12-10 17:59:09.779 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-10 17:59:09.793 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Starting OrderApplication using Java 17.0.12 with PID 30691 (/Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order/target/classes started by llmons in /Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order)
+2024-12-10 17:59:09.794 [main] DEBUG cn.edu.xmu.javaee.order.OrderApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-10 17:59:09.794 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-10 17:59:10.182 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-10 17:59:10.201 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 1 MongoDB repository interface.
+2024-12-10 17:59:10.523 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-10 17:59:10.527 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-10 17:59:10.529 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-10 17:59:10.529 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-12-10 17:59:10.559 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-10 17:59:10.560 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 745 ms
+2024-12-10 17:59:10.646 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoConfig': Injection of autowired dependencies failed
+2024-12-10 17:59:10.647 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-12-10 17:59:10.657 [main] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-10 17:59:10.667 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoConfig': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:515)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at cn.edu.xmu.javaee.order.OrderApplication.main(OrderApplication.java:11)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.data.mongodb.database' in value "${spring.data.mongodb.database}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:200)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:964)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1374)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
+	... 17 common frames omitted
+2024-12-10 18:03:07.707 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-10 18:03:07.725 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Starting OrderApplication using Java 17.0.12 with PID 30869 (/Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order/target/classes started by llmons in /Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order)
+2024-12-10 18:03:07.725 [main] DEBUG cn.edu.xmu.javaee.order.OrderApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-10 18:03:07.726 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-10 18:03:08.115 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-10 18:03:08.134 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 1 MongoDB repository interface.
+2024-12-10 18:03:08.464 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-10 18:03:08.470 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-10 18:03:08.471 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-10 18:03:08.472 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-12-10 18:03:08.503 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-10 18:03:08.503 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 761 ms
+2024-12-10 18:03:08.636 [main] INFO  org.mongodb.driver.cluster - Adding discovered server 192.168.1.100:27017 to client view of cluster
+2024-12-10 18:03:08.650 [main] INFO  org.mongodb.driver.cluster - Adding discovered server 192.168.1.101:27017 to client view of cluster
+2024-12-10 18:03:08.651 [main] INFO  org.mongodb.driver.cluster - Adding discovered server 192.168.1.102:27017 to client view of cluster
+2024-12-10 18:03:08.660 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "5.0.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "15.1.1"}, "platform": "Java/JetBrains s.r.o./17.0.12+1-b1087.25"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@1a0d313, com.mongodb.Jep395RecordCodecProvider@13908f9c, com.mongodb.KotlinCodecProvider@329b331f]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[192.168.1.100:27017, 192.168.1.101:27017, 192.168.1.102:27017], srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='rs0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-12-10 18:03:08.898 [main] DEBUG cn.edu.xmu.javaee.order.config.OrderConfig - snowFlakeIdWorker: ip = 127.0.0.1
+2024-12-10 18:03:09.294 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2024-12-10 18:03:09.323 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-10 18:03:09.331 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-10 18:03:09.341 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Started OrderApplication in 1.771 seconds (process running for 2.043)
+2024-12-10 18:03:13.676 [cluster-ClusterId{value='675811dc25af1d34f6b3c7c2', description='null'}-192.168.1.101:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 192.168.1.101:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:707)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:583)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:428)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:354)
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:92)
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:48)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:203)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:176)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:196)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:716)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:580)
+	... 10 common frames omitted
+2024-12-10 18:03:13.676 [cluster-ClusterId{value='675811dc25af1d34f6b3c7c2', description='null'}-192.168.1.102:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 192.168.1.102:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:707)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:583)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:428)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:354)
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:92)
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:48)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:203)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:176)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:196)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:716)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:580)
+	... 10 common frames omitted
+2024-12-10 18:03:13.676 [cluster-ClusterId{value='675811dc25af1d34f6b3c7c2', description='null'}-192.168.1.100:27017] INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server 192.168.1.100:27017
+com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:707)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:583)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:428)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:354)
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:92)
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:48)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:130)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:78)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:203)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:176)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:196)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:716)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:580)
+	... 10 common frames omitted
+2024-12-10 18:03:56.582 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-10 18:03:56.597 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Starting OrderApplication using Java 17.0.12 with PID 30902 (/Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order/target/classes started by llmons in /Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order)
+2024-12-10 18:03:56.598 [main] DEBUG cn.edu.xmu.javaee.order.OrderApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-10 18:03:56.598 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-10 18:03:57.006 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-10 18:03:57.024 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 1 MongoDB repository interface.
+2024-12-10 18:03:57.355 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-10 18:03:57.360 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-10 18:03:57.362 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-10 18:03:57.362 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-12-10 18:03:57.392 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-10 18:03:57.392 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 767 ms
+2024-12-10 18:03:57.522 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo1:27017 to client view of cluster
+2024-12-10 18:03:57.537 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo2:27017 to client view of cluster
+2024-12-10 18:03:57.538 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo3:27017 to client view of cluster
+2024-12-10 18:03:57.546 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "5.0.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "15.1.1"}, "platform": "Java/JetBrains s.r.o./17.0.12+1-b1087.25"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@74ce7fdf, com.mongodb.Jep395RecordCodecProvider@1f26b992, com.mongodb.KotlinCodecProvider@2f60cbf2]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo1:27017, mongo2:27017, mongo3:27017], srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='rs0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-12-10 18:03:57.774 [main] DEBUG cn.edu.xmu.javaee.order.config.OrderConfig - snowFlakeIdWorker: ip = 127.0.0.1
+2024-12-10 18:03:57.792 [cluster-ClusterId{value='6758120dd584da792943dfe8', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo3:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=233223917, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 18:03:54 CST 2024, lastUpdateTimeNanos=323710140564375}
+2024-12-10 18:03:57.792 [cluster-ClusterId{value='6758120dd584da792943dfe8', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo2:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=232986875, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 18:03:54 CST 2024, lastUpdateTimeNanos=323710140557833}
+2024-12-10 18:03:57.793 [cluster-ClusterId{value='6758120dd584da792943dfe8', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:03:57.793 [cluster-ClusterId{value='6758120dd584da792943dfe8', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 18:03:57.795 [cluster-ClusterId{value='6758120dd584da792943dfe8', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:03:57.801 [cluster-ClusterId{value='6758120dd584da792943dfe8', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo1:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=242074417, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 18:03:54 CST 2024, lastUpdateTimeNanos=323710149608333}
+2024-12-10 18:03:57.801 [cluster-ClusterId{value='6758120dd584da792943dfe8', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 18:03:57.801 [cluster-ClusterId{value='6758120dd584da792943dfe8', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:03:58.178 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2024-12-10 18:03:58.203 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-10 18:03:58.211 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-10 18:03:58.219 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Started OrderApplication in 1.784 seconds (process running for 2.052)
+2024-12-10 18:04:07.976 [cluster-ClusterId{value='6758120dd584da792943dfe8', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 18:04:07.978 [cluster-ClusterId{value='6758120dd584da792943dfe8', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:04:07.978 [cluster-ClusterId{value='6758120dd584da792943dfe8', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 18:04:07.978 [cluster-ClusterId{value='6758120dd584da792943dfe8', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:04:07.979 [cluster-ClusterId{value='6758120dd584da792943dfe8', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 18:04:07.979 [cluster-ClusterId{value='6758120dd584da792943dfe8', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:04:10.506 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-10 18:04:10.509 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-10 18:04:10.513 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2024-12-10 18:04:10.536 [http-nio-8080-exec-1] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-12-10 18:04:17.985 [cluster-ClusterId{value='6758120dd584da792943dfe8', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 18:04:17.987 [cluster-ClusterId{value='6758120dd584da792943dfe8', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:04:17.987 [cluster-ClusterId{value='6758120dd584da792943dfe8', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 18:04:17.988 [cluster-ClusterId{value='6758120dd584da792943dfe8', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:04:17.995 [cluster-ClusterId{value='6758120dd584da792943dfe8', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 18:04:17.995 [cluster-ClusterId{value='6758120dd584da792943dfe8', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:04:51.093 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-10 18:04:51.110 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Starting OrderApplication using Java 17.0.12 with PID 30948 (/Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order/target/classes started by llmons in /Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order)
+2024-12-10 18:04:51.111 [main] DEBUG cn.edu.xmu.javaee.order.OrderApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-10 18:04:51.111 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-10 18:04:51.473 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-10 18:04:51.492 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 1 MongoDB repository interface.
+2024-12-10 18:04:51.810 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-10 18:04:51.815 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-10 18:04:51.817 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-10 18:04:51.817 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-12-10 18:04:51.847 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-10 18:04:51.847 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 720 ms
+2024-12-10 18:04:51.977 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo1:27017 to client view of cluster
+2024-12-10 18:04:51.991 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo2:27017 to client view of cluster
+2024-12-10 18:04:51.992 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo3:27017 to client view of cluster
+2024-12-10 18:04:52.000 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "5.0.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "15.1.1"}, "platform": "Java/JetBrains s.r.o./17.0.12+1-b1087.25"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@5dae5a70, com.mongodb.Jep395RecordCodecProvider@7686f701, com.mongodb.KotlinCodecProvider@47c96f2c]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo1:27017, mongo2:27017, mongo3:27017], srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='rs0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-12-10 18:04:52.144 [cluster-ClusterId{value='675812438351482f4332b0ed', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo3:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=131276000, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 18:04:44 CST 2024, lastUpdateTimeNanos=323764494081083}
+2024-12-10 18:04:52.144 [cluster-ClusterId{value='675812438351482f4332b0ed', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo1:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=131232750, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 18:04:44 CST 2024, lastUpdateTimeNanos=323764494105500}
+2024-12-10 18:04:52.144 [cluster-ClusterId{value='675812438351482f4332b0ed', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo2:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=131337000, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 18:04:44 CST 2024, lastUpdateTimeNanos=323764494117583}
+2024-12-10 18:04:52.145 [cluster-ClusterId{value='675812438351482f4332b0ed', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:04:52.146 [cluster-ClusterId{value='675812438351482f4332b0ed', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 18:04:52.147 [cluster-ClusterId{value='675812438351482f4332b0ed', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:04:52.147 [cluster-ClusterId{value='675812438351482f4332b0ed', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 18:04:52.147 [cluster-ClusterId{value='675812438351482f4332b0ed', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:04:52.230 [main] DEBUG cn.edu.xmu.javaee.order.config.OrderConfig - snowFlakeIdWorker: ip = 127.0.0.1
+2024-12-10 18:04:52.637 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2024-12-10 18:04:52.663 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-10 18:04:52.671 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-10 18:04:52.679 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Started OrderApplication in 1.716 seconds (process running for 1.967)
+2024-12-10 18:05:02.214 [cluster-ClusterId{value='675812438351482f4332b0ed', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 18:05:02.215 [cluster-ClusterId{value='675812438351482f4332b0ed', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:05:02.216 [cluster-ClusterId{value='675812438351482f4332b0ed', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 18:05:02.216 [cluster-ClusterId{value='675812438351482f4332b0ed', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:05:12.250 [cluster-ClusterId{value='675812438351482f4332b0ed', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 18:05:12.253 [cluster-ClusterId{value='675812438351482f4332b0ed', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:05:12.254 [cluster-ClusterId{value='675812438351482f4332b0ed', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 18:05:12.254 [cluster-ClusterId{value='675812438351482f4332b0ed', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:05:12.254 [cluster-ClusterId{value='675812438351482f4332b0ed', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 18:05:12.254 [cluster-ClusterId{value='675812438351482f4332b0ed', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:05:22.230 [cluster-ClusterId{value='675812438351482f4332b0ed', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 18:05:22.232 [cluster-ClusterId{value='675812438351482f4332b0ed', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:05:22.232 [cluster-ClusterId{value='675812438351482f4332b0ed', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 18:05:22.232 [cluster-ClusterId{value='675812438351482f4332b0ed', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:05:41.537 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-10 18:05:41.556 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Starting OrderApplication using Java 17.0.12 with PID 30980 (/Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order/target/classes started by llmons in /Users/llmons/IdeaProjects/JavaEEPlatform/10.SpringData_Mongo/order)
+2024-12-10 18:05:41.557 [main] DEBUG cn.edu.xmu.javaee.order.OrderApplication - Running with Spring Boot v3.3.4, Spring v6.1.13
+2024-12-10 18:05:41.557 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-10 18:05:41.917 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-12-10 18:05:41.937 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 1 MongoDB repository interface.
+2024-12-10 18:05:42.271 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-10 18:05:42.276 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-10 18:05:42.278 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-10 18:05:42.278 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-12-10 18:05:42.309 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-10 18:05:42.309 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 736 ms
+2024-12-10 18:05:42.439 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo1:27017 to client view of cluster
+2024-12-10 18:05:42.453 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo2:27018 to client view of cluster
+2024-12-10 18:05:42.454 [main] INFO  org.mongodb.driver.cluster - Adding discovered server mongo3:27019 to client view of cluster
+2024-12-10 18:05:42.462 [main] INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "5.0.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "15.1.1"}, "platform": "Java/JetBrains s.r.o./17.0.12+1-b1087.25"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@6cbdd1c5, com.mongodb.Jep395RecordCodecProvider@60816371, com.mongodb.KotlinCodecProvider@678586f0]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[mongo1:27017, mongo2:27018, mongo3:27019], srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='rs0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-12-10 18:05:42.587 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo2:27018] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo2:27018, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=113464084, setName='rs0', canonicalAddress=mongo2:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=6755081d07d351e08cd2abce, counter=9}, lastWriteDate=Tue Dec 10 18:05:34 CST 2024, lastUpdateTimeNanos=323814939376166}
+2024-12-10 18:05:42.588 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo2:27018] INFO  org.mongodb.driver.cluster - Adding discovered server mongo3:27017 to client view of cluster
+2024-12-10 18:05:42.589 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo2:27018] INFO  org.mongodb.driver.cluster - Adding discovered server mongo2:27017 to client view of cluster
+2024-12-10 18:05:42.589 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo1:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=116053750, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 18:05:34 CST 2024, lastUpdateTimeNanos=323814941740208}
+2024-12-10 18:05:42.589 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo3:27019] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo3:27019, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=116213417, setName='rs0', canonicalAddress=mongo3:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=67550877d33c2ea9b1182abd, counter=5}, lastWriteDate=Tue Dec 10 18:05:34 CST 2024, lastUpdateTimeNanos=323814941960125}
+2024-12-10 18:05:42.590 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo2:27018] INFO  org.mongodb.driver.cluster - Canonical address mongo2:27017 does not match server address.  Removing mongo2:27018 from client view of cluster
+2024-12-10 18:05:42.592 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Server mongo3:27019 is no longer a member of the replica set.  Removing from client view of cluster.
+2024-12-10 18:05:42.592 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:05:42.695 [main] DEBUG cn.edu.xmu.javaee.order.config.OrderConfig - snowFlakeIdWorker: ip = 127.0.0.1
+2024-12-10 18:05:42.741 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo3:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=151046334, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 18:05:34 CST 2024, lastUpdateTimeNanos=323815093411125}
+2024-12-10 18:05:42.741 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=mongo2:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=150359083, setName='rs0', canonicalAddress=mongo1:27017, hosts=[mongo3:27017, mongo2:27017, mongo1:27017], passives=[], arbiters=[], primary='mongo1:27017', tagSet=TagSet{[]}, electionId=7fffffff0000000000000002, setVersion=1, topologyVersion=TopologyVersion{processId=6755071a779930983ed6342e, counter=7}, lastWriteDate=Tue Dec 10 18:05:34 CST 2024, lastUpdateTimeNanos=323815093408625}
+2024-12-10 18:05:42.741 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 18:05:42.742 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:05:42.743 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 18:05:42.743 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:05:43.097 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 14 endpoints beneath base path '/actuator'
+2024-12-10 18:05:43.123 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-10 18:05:43.131 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-10 18:05:43.139 [main] INFO  cn.edu.xmu.javaee.order.OrderApplication - Started OrderApplication in 1.735 seconds (process running for 1.994)
+2024-12-10 18:05:48.645 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-10 18:05:48.645 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-10 18:05:48.654 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2024-12-10 18:05:48.674 [http-nio-8080-exec-1] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-12-10 18:05:52.681 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 18:05:52.683 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:05:52.984 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 18:05:52.985 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:05:52.992 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 18:05:52.993 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:06:02.668 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 18:06:02.670 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:06:02.971 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 18:06:02.972 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:06:02.975 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 18:06:02.976 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:06:12.669 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo3:27017
+2024-12-10 18:06:12.669 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo1:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo1:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:06:12.982 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo1:27017
+2024-12-10 18:06:12.982 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo2:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo2:27017 with max election id 7fffffff0000000000000002 and max set version 1
+2024-12-10 18:06:12.987 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Rediscovering type of existing primary mongo2:27017
+2024-12-10 18:06:12.987 [cluster-ClusterId{value='675812767bcc2b62ec001d6a', description='null'}-mongo3:27017] INFO  org.mongodb.driver.cluster - Discovered replica set primary mongo3:27017 with max election id 7fffffff0000000000000002 and max set version 1
